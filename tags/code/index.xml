@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on wikihuang Blog</title>
-    <link>http://localhost:1313/tags/code/</link>
+    <link>https://wikihuangblog.github.io/tags/code/</link>
     <description>Recent content in Code on wikihuang Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wikihuangblog.github.io/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>puml-to-jpg</title>
-      <link>http://localhost:1313/post/code/python/00_code/puml-to-jpg/</link>
+      <link>https://wikihuangblog.github.io/post/code/python/00_code/puml-to-jpg/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/code/python/00_code/puml-to-jpg/</guid>
+      <guid>https://wikihuangblog.github.io/post/code/python/00_code/puml-to-jpg/</guid>
       <description>&lt;h1 id=&#34;plantuml-轉-jpg-轉換器&#34;&gt;PlantUML 轉 JPG 轉換器&lt;/h1&gt;&#xA;&lt;p&gt;這個 Python 腳本可以將 target 資料夾中的所有 PlantUML (.puml) 檔案轉換為 JPG 圖片格式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;安裝依賴&#34;&gt;安裝依賴&lt;/h2&gt;&#xA;&lt;p&gt;首先安裝必要的 Python 套件：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -r requirements.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或者手動安裝：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;plantuml&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt;0.3.0 &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;Pillow&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt;10.0.0&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;確保您的 PlantUML 檔案都放在 &lt;code&gt;target&lt;/code&gt; 資料夾中&lt;/li&gt;&#xA;&lt;li&gt;執行腳本：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;功能特點&#34;&gt;功能特點&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔍 自動掃描 target 資料夾中的所有 .puml 檔案&lt;/li&gt;&#xA;&lt;li&gt;🖼️ 將 PlantUML 圖表轉換為高品質 JPG 圖片&lt;/li&gt;&#xA;&lt;li&gt;📁 自動創建 output 資料夾存放轉換後的圖片&lt;/li&gt;&#xA;&lt;li&gt;🎨 處理透明背景，轉換為白色背景&lt;/li&gt;&#xA;&lt;li&gt;📊 顯示轉換進度和結果統計&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;輸出&#34;&gt;輸出&lt;/h2&gt;&#xA;&lt;p&gt;轉換後的 JPG 檔案將保存在 &lt;code&gt;output&lt;/code&gt; 資料夾中，檔案名稱與原始 .puml 檔案相同，但副檔名為 .jpg。&lt;/p&gt;</description>
     </item>
     <item>
       <title>update-lnk</title>
-      <link>http://localhost:1313/post/code/python/00_code/update-lnk/</link>
+      <link>https://wikihuangblog.github.io/post/code/python/00_code/update-lnk/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/code/python/00_code/update-lnk/</guid>
+      <guid>https://wikihuangblog.github.io/post/code/python/00_code/update-lnk/</guid>
       <description>&lt;h1 id=&#34;快捷方式更新工具-shortcut-update-tool&#34;&gt;快捷方式更新工具 (Shortcut Update Tool)&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於批量更新 Windows 快捷方式（.lnk 文件）的 Python 工具。該工具可以遞歸地遍歷指定資料夾中的所有 .lnk 文件，並更新它們的目標路徑和參數。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔄 批量更新多個快捷方式文件&lt;/li&gt;&#xA;&lt;li&gt;📁 遞歸遍歷子資料夾&lt;/li&gt;&#xA;&lt;li&gt;🎯 自定義目標路徑&lt;/li&gt;&#xA;&lt;li&gt;⚙️ 修改快捷方式參數&lt;/li&gt;&#xA;&lt;li&gt;🪟 Windows 專用（使用 win32com.client）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;系統需求&#34;&gt;系統需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows 作業系統&lt;/li&gt;&#xA;&lt;li&gt;Python 3.x&lt;/li&gt;&#xA;&lt;li&gt;pywin32 套件&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝依賴&#34;&gt;安裝依賴&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pywin32&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;h3 id=&#34;基本使用&#34;&gt;基本使用&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;修改 &lt;code&gt;app.py&lt;/code&gt; 中的配置：&lt;/p&gt;</description>
     </item>
     <item>
       <title>class-function-extractor</title>
-      <link>http://localhost:1313/post/code/python/00_code/class-function-extractor/</link>
+      <link>https://wikihuangblog.github.io/post/code/python/00_code/class-function-extractor/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/code/python/00_code/class-function-extractor/</guid>
+      <guid>https://wikihuangblog.github.io/post/code/python/00_code/class-function-extractor/</guid>
       <description>&lt;h1 id=&#34;代碼註解提取工具&#34;&gt;代碼註解提取工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於從程式碼文件中提取註解並創建快捷方式的工具，支援多種程式語言，包括 Python、JavaScript、C++、Java、C# 和 Markdown。&lt;/p&gt;</description>
     </item>
   </channel>

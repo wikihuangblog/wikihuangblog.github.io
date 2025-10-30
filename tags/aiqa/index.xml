@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AIQA on wikihuang Blog</title>
-    <link>http://localhost:1313/tags/aiqa/</link>
+    <link>https://wikihuangblog.github.io/tags/aiqa/</link>
     <description>Recent content in AIQA on wikihuang Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/aiqa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wikihuangblog.github.io/tags/aiqa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cursor-history</title>
-      <link>http://localhost:1313/post/code/python/00_aiqa/ch02_cursor/cursor-history/</link>
+      <link>https://wikihuangblog.github.io/post/code/python/00_aiqa/ch02_cursor/cursor-history/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/code/python/00_aiqa/ch02_cursor/cursor-history/</guid>
+      <guid>https://wikihuangblog.github.io/post/code/python/00_aiqa/ch02_cursor/cursor-history/</guid>
       <description>&lt;h1 id=&#34;cursor-聊天歷史提取器&#34;&gt;Cursor 聊天歷史提取器&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於提取和整理 Cursor 編輯器聊天歷史記錄的 Python 工具。該工具可以從 Cursor 的本地數據庫中提取聊天記錄，並將其整理成易於閱讀的 Markdown 格式文件。&lt;/p&gt;</description>
     </item>
   </channel>
