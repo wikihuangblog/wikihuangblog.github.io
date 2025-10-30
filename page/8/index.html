@@ -187,60 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/exam-date-to-download-q@@flow/onenote-video-toc-to-url/">
-        <h2 class="post-title">
-            onenote-video-toc-to-url
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="onenote-影片目錄轉-url-工具">OneNote 影片目錄轉 URL 工具</h1>
-<p>這是一個 Python 工具，用於將 OneNote 影片目錄（Markdown 格式）轉換為資料夾結構和 URL 檔案，方便下載和管理影片資源。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>📁 自動創建資料夾結構</li>
-<li>🔗 生成 .url 檔案，快速訪問影片連結</li>
-<li>🧹 自動清理不合法的資料夾名稱</li>
-<li>📝 支援 Markdown 格式的目錄檔案</li>
-<li>🎯 專門針對考試影片資源優化</li>
-</ul>
-<h2 id="系統需求">系統需求</h2>
-<ul>
-<li>Python 3.6 或更高版本</li>
-<li>Windows 作業系統（支援 .url 檔案）</li>
-</ul>
-<h2 id="安裝與使用">安裝與使用</h2>
-<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
-<ol>
-<li>將您的 Markdown 目錄檔案放在專案目錄中</li>
-<li>執行批次檔：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>go.bat your_toc_file.md
-</span></span></code></pre></div></li>
-</ol>
-<h3 id="方法二直接使用-python">方法二：直接使用 Python</h3>
-<ol>
-<li>開啟命令提示字元或 PowerShell</li>
-<li>執行以下命令：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py your_toc_file.md
-</span></span></code></pre></div></li>
-</ol>
-<h2 id="支援的目錄格式">支援的目錄格式</h2>
-<p>工具支援以下 Markdown 格式：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_video/pbf-to-lnk/">
         <h2 class="post-title">
             pbf-to-lnk
@@ -424,6 +370,64 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_search/ref-search-q-keyword-result/">
+        <h2 class="post-title">
+            ref-search-Q-keyword-result
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="參考資料搜索工具-reference-search-tool">參考資料搜索工具 (Reference Search Tool)</h1>
+<p>這是一個基於 FileLocator Pro 的自動化搜索工具，用於根據資料夾名稱中的關鍵字搜索相關的參考資料。</p>
+<h2 id="功能說明">功能說明</h2>
+<ul>
+<li>自動從當前資料夾路徑中提取關鍵字</li>
+<li>支援多關鍵字搜索（以分號分隔）</li>
+<li>使用 FileLocator Pro 進行高效的文件搜索</li>
+<li>生成 HTML 格式的搜索結果報告</li>
+</ul>
+<h2 id="項目結構">項目結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                    # 主程序（最新版本）
+├── app-v1.py                # 早期版本
+├── go.bat                   # 批處理啟動腳本
+├── 00_ref/
+│   └── filelocator-serch-template.py  # FileLocator 使用範例
+├── pic/
+│   └── image-20250328070554364.png    # 項目說明圖片
+├── issue.markdown           # 項目說明文檔
+└── README.md               # 本說明文檔
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="1-環境需求">1. 環境需求</h3>
+<ul>
+<li>Python 3.x</li>
+<li>FileLocator Pro（需安裝在預設路徑）</li>
+<li>Windows 作業系統</li>
+</ul>
+<h3 id="2-快速開始">2. 快速開始</h3>
+<ol>
+<li>將此工具放置在您的參考資料資料夾中</li>
+<li>雙擊執行 <code>go.bat</code> 或在命令列中執行：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go.bat
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="3-資料夾命名規則">3. 資料夾命名規則</h3>
+<p>工具會自動從資料夾路徑中提取搜索關鍵字：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -550,6 +554,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -558,6 +564,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -608,10 +626,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -621,6 +643,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -648,13 +672,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

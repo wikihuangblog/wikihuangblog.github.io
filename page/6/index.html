@@ -187,56 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/ch09_eng/local-fetch-server-for-eng-translate/">
-        <h2 class="post-title">
-            local-fetch-server-for-eng-translate
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="本地翻譯伺服器-local-translation-server">本地翻譯伺服器 (Local Translation Server)</h1>
-<p>這是一個基於 Flask 的本地翻譯伺服器，專門為 Tampermonkey 腳本提供英文到繁體中文的翻譯服務。主要用於 JanitorAI 聊天頁面的即時翻譯功能。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>🌐 <strong>本地翻譯服務</strong>：使用 Google Translate API 提供翻譯服務</li>
-<li>🔄 <strong>批量句子翻譯</strong>：支援多句子同時翻譯，使用 <code>|||</code> 分隔符</li>
-<li>🎯 <strong>中英對照顯示</strong>：翻譯結果以中英對照格式呈現</li>
-<li>⌨️ <strong>快捷鍵操作</strong>：支援 F8 快捷鍵觸發翻譯</li>
-<li>🚀 <strong>CORS 支援</strong>：允許跨域請求，配合 Tampermonkey 腳本使用</li>
-</ul>
-<h2 id="專案結構">專案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                                    # 主要翻譯伺服器 (支援句子分割)
-├── Virtuoso Final List Item Translate...js  # Tampermonkey 腳本
-├── 00_version---py/                          # Python 版本歷史
-│   ├── v1_only-single-string;wait-split-multi/
-│   └── v2_long-string-to-split.py
-├── 00_version--js/                           # JavaScript 版本歷史
-│   ├── translate-final-section/
-│   ├── translate-v2/
-│   └── translate-v3/
-└── 00_readme/                               # 說明文件
-</code></pre><h2 id="安裝與設定">安裝與設定</h2>
-<h3 id="1-安裝-python-依賴">1. 安裝 Python 依賴</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install flask <span style="color:#8be9fd;font-style:italic">googletrans</span><span style="color:#ff79c6">==</span>4.0.0-rc1 flask-cors
-</span></span></code></pre></div><h3 id="2-啟動翻譯伺服器">2. 啟動翻譯伺服器</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div><p>伺服器將在 <code>http://localhost:5008</code> 啟動</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/md-extract-jpg/">
         <h2 class="post-title">
             md-extract-jpg
@@ -348,6 +298,53 @@
 </ul>
 <h2 id="安裝需求">安裝需求</h2>
 <p>確保您的系統已安裝以下 Python 套件：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_search/move-app-from-current-to-codeall/">
+        <h2 class="post-title">
+            move-app-from-current-to-codeAll
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="應用程式移動工具-move-app-to-codeall">應用程式移動工具 (Move App to CodeAll)</h1>
+<p>這是一個用於將應用程式從當前位置移動到 codeAll 目錄並建立雙向捷徑的 Python 工具。</p>
+<h2 id="功能說明">功能說明</h2>
+<ul>
+<li>將指定的資料夾移動到 codeAll 目錄結構中</li>
+<li>在原始位置建立指向新位置的捷徑</li>
+<li>在新位置建立指向原始位置的捷徑</li>
+<li>自動建立版本控制資料夾 (<code>00_version</code>)</li>
+<li>支援多種目標根目錄配置</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Windows 作業系統</li>
+<li>Python 3.x</li>
+<li><code>pywin32</code> 套件 (用於建立 Windows 捷徑)</li>
+</ul>
+<h2 id="安裝依賴">安裝依賴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pywin32
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批次檔-推薦">方法一：使用批次檔 (推薦)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go.bat <span style="color:#f1fa8c">&#34;C:\path\to\your\app\folder&#34;</span>
+</span></span></code></pre></div><h3 id="方法二直接使用-python">方法二：直接使用 Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py <span style="color:#f1fa8c">&#34;C:\path\to\your\app\folder&#34;</span>
+</span></span></code></pre></div><h2 id="支援的目標類型">支援的目標類型</h2>
+<p>目前支援以下目標名稱：</p>
        
         </div>
     </a>
@@ -488,6 +485,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -496,6 +495,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -546,10 +557,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -559,6 +574,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -586,13 +603,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

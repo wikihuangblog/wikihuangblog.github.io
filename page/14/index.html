@@ -187,31 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_ebook/ch-toc-searchable-@@flow/append-chapter-text/">
-        <h2 class="post-title">
-            append-chapter-text
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="-章節內容自動生成工具">📚 章節內容自動生成工具</h1>
-<h2 id="-專案概述">🎯 專案概述</h2>
-<p>這是一個用於自動生成電子書章節內容的 Python 工具。該工具能夠掃描指定的目錄結構，識別章節和小節，並為每個 Markdown 檔案自動生成包含章節資訊、結構導覽和內容預覽的完整內容。</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Sunday, October 5, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_ebook/book-code-toc-link-crawl-title/">
         <h2 class="post-title">
             book-code-toc-link-crawl-title
@@ -419,6 +394,63 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_ebook/crawl-ebook-@@flow/extract-toc-cover-thumbnail/">
+        <h2 class="post-title">
+            extract-toc-cover-thumbnail
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="電子書目錄與封面提取工具">電子書目錄與封面提取工具</h1>
+<p>這是一個用於從電子書網站提取目錄（TOC）、封面縮略圖和相關資訊的 Python 工具。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔍 <strong>自動化目錄提取</strong>：從指定的電子書網站自動提取章節目錄</li>
+<li>🖼️ <strong>封面縮略圖下載</strong>：提取並保存書籍封面圖片</li>
+<li>📁 <strong>批次處理</strong>：支援大量 .url 檔案的批次處理</li>
+<li>🧹 <strong>內容清理</strong>：自動移除不必要的圖片和樣式元素</li>
+<li>📄 <strong>HTML 輸出</strong>：將提取的內容保存為格式化的 HTML 檔案</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                          # 主要程式檔案
+├── 00_temp-ready-move-area/        # 待處理的 URL 檔案存放區
+│   └── urls/
+│       └── 語言/                   # 按語言分類的 URL 檔案
+│           ├── eng2/               # 英文書籍 URL
+│           ├── 多益/               # 多益相關書籍 URL
+│           └── 英文/               # 英文學習書籍 URL
+├── 00_url-for-toc/                 # 用於目錄提取的 URL 檔案
+│   └── urls/
+├── htmlToc/                        # 輸出的 HTML 目錄檔案（執行後生成）
+└── ref/                            # 參考檔案
+    └── oriContent.html             # 原始網頁內容範例
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests beautifulsoup4
+</span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 作業系統（程式碼中包含 Windows 路徑格式）</li>
+</ul>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備-url-檔案">1. 準備 URL 檔案</h3>
+<p>將要處理的電子書 URL 檔案放置在 <code>00_url-for-toc/urls/</code> 目錄中。URL 檔案格式如下：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Sunday, October 5, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -545,6 +577,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -553,6 +587,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -603,10 +649,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -616,6 +666,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -643,13 +695,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

@@ -187,57 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/grouped-path-bracket-extract/">
-        <h2 class="post-title">
-            grouped-path-bracket-extract
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="檔案路徑關鍵字提取與統計工具">檔案路徑關鍵字提取與統計工具</h1>
-<p>這是一個用於從檔案路徑中提取大括號內的關鍵字，並生成關鍵字頻率統計圖表的 Python 工具。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>🔍 <strong>關鍵字提取</strong>：從檔案路徑中自動提取大括號 <code>{}</code> 內的關鍵字</li>
-<li>📊 <strong>頻率統計</strong>：統計每個關鍵字的出現頻率</li>
-<li>🖼️ <strong>視覺化輸出</strong>：生成包含關鍵字頻率表格的圖片檔案</li>
-<li>🔄 <strong>多關鍵字支援</strong>：支援單個檔案路徑中包含多個關鍵字的情況</li>
-<li>📝 <strong>自動命名</strong>：根據提取的關鍵字自動生成輸出檔案名稱</li>
-</ul>
-<h2 id="檔案結構">檔案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                                    # 主程式檔案
-├── path-with-keyword-in-bracket.txt         # 輸入檔案（包含檔案路徑列表）
-├── path-with-keyword-in-bracket-old.txt     # 舊版輸入檔案
-├── todo.md                                  # 待辦事項和問題記錄
-├── EaseUS_2024_10_15_10_55_59.jpg          # 範例輸出圖片
-└── README.md                                # 說明文件
-</code></pre><h2 id="安裝需求">安裝需求</h2>
-<h3 id="python-套件">Python 套件</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install Pillow
-</span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
-<ul>
-<li>Python 3.6+</li>
-<li>Windows 系統（字體路徑設定為 Windows 字體）</li>
-</ul>
-<h2 id="使用方法">使用方法</h2>
-<h3 id="1-準備輸入檔案">1. 準備輸入檔案</h3>
-<p>將包含檔案路徑的列表儲存為 <code>path-with-keyword-in-bracket.txt</code>，每行一個路徑。</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/syncqq@@flow/html-to-md-nextqq-split/">
         <h2 class="post-title">
             html-to-md-nextQQ-split
@@ -442,6 +391,56 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/ch09_eng/local-fetch-server-for-eng-translate/">
+        <h2 class="post-title">
+            local-fetch-server-for-eng-translate
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="本地翻譯伺服器-local-translation-server">本地翻譯伺服器 (Local Translation Server)</h1>
+<p>這是一個基於 Flask 的本地翻譯伺服器，專門為 Tampermonkey 腳本提供英文到繁體中文的翻譯服務。主要用於 JanitorAI 聊天頁面的即時翻譯功能。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🌐 <strong>本地翻譯服務</strong>：使用 Google Translate API 提供翻譯服務</li>
+<li>🔄 <strong>批量句子翻譯</strong>：支援多句子同時翻譯，使用 <code>|||</code> 分隔符</li>
+<li>🎯 <strong>中英對照顯示</strong>：翻譯結果以中英對照格式呈現</li>
+<li>⌨️ <strong>快捷鍵操作</strong>：支援 F8 快捷鍵觸發翻譯</li>
+<li>🚀 <strong>CORS 支援</strong>：允許跨域請求，配合 Tampermonkey 腳本使用</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                                    # 主要翻譯伺服器 (支援句子分割)
+├── Virtuoso Final List Item Translate...js  # Tampermonkey 腳本
+├── 00_version---py/                          # Python 版本歷史
+│   ├── v1_only-single-string;wait-split-multi/
+│   └── v2_long-string-to-split.py
+├── 00_version--js/                           # JavaScript 版本歷史
+│   ├── translate-final-section/
+│   ├── translate-v2/
+│   └── translate-v3/
+└── 00_readme/                               # 說明文件
+</code></pre><h2 id="安裝與設定">安裝與設定</h2>
+<h3 id="1-安裝-python-依賴">1. 安裝 Python 依賴</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install flask <span style="color:#8be9fd;font-style:italic">googletrans</span><span style="color:#ff79c6">==</span>4.0.0-rc1 flask-cors
+</span></span></code></pre></div><h3 id="2-啟動翻譯伺服器">2. 啟動翻譯伺服器</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div><p>伺服器將在 <code>http://localhost:5008</code> 啟動</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -568,6 +567,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -576,6 +577,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -626,10 +639,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -639,6 +656,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -666,13 +685,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

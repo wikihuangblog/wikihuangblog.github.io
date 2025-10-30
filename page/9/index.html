@@ -187,64 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_search/ref-search-q-keyword-result/">
-        <h2 class="post-title">
-            ref-search-Q-keyword-result
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="參考資料搜索工具-reference-search-tool">參考資料搜索工具 (Reference Search Tool)</h1>
-<p>這是一個基於 FileLocator Pro 的自動化搜索工具，用於根據資料夾名稱中的關鍵字搜索相關的參考資料。</p>
-<h2 id="功能說明">功能說明</h2>
-<ul>
-<li>自動從當前資料夾路徑中提取關鍵字</li>
-<li>支援多關鍵字搜索（以分號分隔）</li>
-<li>使用 FileLocator Pro 進行高效的文件搜索</li>
-<li>生成 HTML 格式的搜索結果報告</li>
-</ul>
-<h2 id="項目結構">項目結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                    # 主程序（最新版本）
-├── app-v1.py                # 早期版本
-├── go.bat                   # 批處理啟動腳本
-├── 00_ref/
-│   └── filelocator-serch-template.py  # FileLocator 使用範例
-├── pic/
-│   └── image-20250328070554364.png    # 項目說明圖片
-├── issue.markdown           # 項目說明文檔
-└── README.md               # 本說明文檔
-</code></pre><h2 id="使用方法">使用方法</h2>
-<h3 id="1-環境需求">1. 環境需求</h3>
-<ul>
-<li>Python 3.x</li>
-<li>FileLocator Pro（需安裝在預設路徑）</li>
-<li>Windows 作業系統</li>
-</ul>
-<h3 id="2-快速開始">2. 快速開始</h3>
-<ol>
-<li>將此工具放置在您的參考資料資料夾中</li>
-<li>雙擊執行 <code>go.bat</code> 或在命令列中執行：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go.bat
-</span></span></code></pre></div></li>
-</ol>
-<h3 id="3-資料夾命名規則">3. 資料夾命名規則</h3>
-<p>工具會自動從資料夾路徑中提取搜索關鍵字：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/000_move-prefix/rename-folder-by-keyword-with-prefix-number/">
         <h2 class="post-title">
             rename-folder-by-keyword-with-prefix-number
@@ -423,6 +365,65 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_video/run-all-lnk-in-folder/">
+        <h2 class="post-title">
+            run-all-lnk-in-folder
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="批量文件處理工具">批量文件處理工具</h1>
+<p>這是一個用於批量處理文件的 Python 應用程序，主要功能包括處理 HTML 文件和 .lnk 快捷方式文件。</p>
+<h2 id="功能特色">功能特色</h2>
+<h3 id="1-html-文件處理器-apppy">1. HTML 文件處理器 (<code>app.py</code>)</h3>
+<ul>
+<li>自動掃描指定資料夾中的 HTML 文件</li>
+<li>從 HTML 文件中提取 URL 鏈接</li>
+<li>按順序打開每個 URL（使用瀏覽器）</li>
+<li>處理完成後自動移動文件到完成資料夾</li>
+<li>智能延遲計算，基於資料夾名稱中的數字範圍</li>
+<li>顯示預估完成時間</li>
+</ul>
+<h3 id="2-lnk-文件處理器-v1_app-open-by-lnkpy">2. LNK 文件處理器 (<code>v1_app-open-by-lnk.py</code>)</h3>
+<ul>
+<li>掃描指定資料夾中的 .lnk 快捷方式文件</li>
+<li>自動打開每個快捷方式指向的應用程序</li>
+<li>記錄處理日誌</li>
+<li>處理完成後移動文件到完成資料夾</li>
+<li>支援多層級目錄掃描</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6+</li>
+<li>Windows 作業系統（使用 win32com 模組）</li>
+<li>以下 Python 套件：
+<ul>
+<li><code>beautifulsoup4</code></li>
+<li><code>pywin32</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="安裝依賴">安裝依賴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install beautifulsoup4 pywin32
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="html-文件處理">HTML 文件處理</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py &lt;目標資料夾路徑&gt;
+</span></span></code></pre></div><p><strong>範例：</strong></p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -549,6 +550,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -557,6 +560,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -607,10 +622,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -620,6 +639,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -647,13 +668,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

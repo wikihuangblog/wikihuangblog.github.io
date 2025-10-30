@@ -187,58 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d30_06_combinqa-new/">
-        <h2 class="post-title">
-            D30_06_combinQA-new
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="qa-合併與分割工具">QA 合併與分割工具</h1>
-<p>這是一個用於處理問答題目的 Python 工具，主要功能是將問題（Q.md）和答案（A.md）文件合併，並將合併後的內容分割成單獨的文件。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li><strong>智能合併</strong>：自動將問題和答案按照題號配對合併</li>
-<li><strong>格式處理</strong>：自動處理複選題標記、圖片標記等特殊格式</li>
-<li><strong>連結統一</strong>：將所有 yamol.tw 連結統一為 item 連結</li>
-<li><strong>自動分割</strong>：將合併後的內容按題目分割成單獨的 Markdown 文件</li>
-<li><strong>文件命名</strong>：根據題目內容自動生成簡潔的文件名</li>
-</ul>
-<h2 id="項目結構">項目結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                 # 主程式
-├── run.bat               # Windows 批次執行檔
-├── 00_issue/             # 問題記錄
-├── 00_version/           # 版本歷史
-├── beforeQA/             # 範例資料
-├── output/               # 輸出目錄
-├── probQA/               # 問題資料
-└── test/                 # 測試資料
-</code></pre><h2 id="使用方法">使用方法</h2>
-<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
-<ol>
-<li>將您的 <code>Q.md</code> 和 <code>A.md</code> 文件放在同一個資料夾中</li>
-<li>在該資料夾中執行 <code>run.bat</code></li>
-<li>程式會自動處理並在 <code>output/</code> 資料夾中生成結果</li>
-</ol>
-<h3 id="方法二直接執行-python">方法二：直接執行 Python</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py &lt;工作目錄路徑&gt;
-</span></span></code></pre></div><p>例如：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_target/ditto-extract/">
         <h2 class="post-title">
             ditto-extract
@@ -405,6 +353,57 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/grouped-path-bracket-extract/">
+        <h2 class="post-title">
+            grouped-path-bracket-extract
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="檔案路徑關鍵字提取與統計工具">檔案路徑關鍵字提取與統計工具</h1>
+<p>這是一個用於從檔案路徑中提取大括號內的關鍵字，並生成關鍵字頻率統計圖表的 Python 工具。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔍 <strong>關鍵字提取</strong>：從檔案路徑中自動提取大括號 <code>{}</code> 內的關鍵字</li>
+<li>📊 <strong>頻率統計</strong>：統計每個關鍵字的出現頻率</li>
+<li>🖼️ <strong>視覺化輸出</strong>：生成包含關鍵字頻率表格的圖片檔案</li>
+<li>🔄 <strong>多關鍵字支援</strong>：支援單個檔案路徑中包含多個關鍵字的情況</li>
+<li>📝 <strong>自動命名</strong>：根據提取的關鍵字自動生成輸出檔案名稱</li>
+</ul>
+<h2 id="檔案結構">檔案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                                    # 主程式檔案
+├── path-with-keyword-in-bracket.txt         # 輸入檔案（包含檔案路徑列表）
+├── path-with-keyword-in-bracket-old.txt     # 舊版輸入檔案
+├── todo.md                                  # 待辦事項和問題記錄
+├── EaseUS_2024_10_15_10_55_59.jpg          # 範例輸出圖片
+└── README.md                                # 說明文件
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install Pillow
+</span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.6+</li>
+<li>Windows 系統（字體路徑設定為 Windows 字體）</li>
+</ul>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備輸入檔案">1. 準備輸入檔案</h3>
+<p>將包含檔案路徑的列表儲存為 <code>path-with-keyword-in-bracket.txt</code>，每行一個路徑。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -531,6 +530,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -539,6 +540,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -589,10 +602,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -602,6 +619,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -629,13 +648,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>

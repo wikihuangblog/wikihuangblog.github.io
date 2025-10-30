@@ -187,40 +187,6 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d15_01_clipboard-to-jpg/">
-        <h2 class="post-title">
-            D15_01_clipboard-to-jpg
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="剪貼簿圖片轉-markdown-工具">剪貼簿圖片轉 Markdown 工具</h1>
-<p>這是一個 Python 工具，可以將剪貼簿中的圖片保存為 JPG 格式，並自動創建包含這些圖片的 Markdown 文件。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>🖼️ 從剪貼簿獲取圖片並保存為 JPG 格式</li>
-<li>📝 自動創建 Markdown 文件並插入圖片</li>
-<li>⌨️ 使用快捷鍵操作（F9 保存圖片，F7 完成文件）</li>
-<li>🔄 支援連續創建多個 Markdown 文件</li>
-<li>📁 自動創建圖片目錄並組織文件</li>
-</ul>
-<h2 id="安裝需求">安裝需求</h2>
-<p>確保您的系統已安裝以下 Python 套件：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d24_03_search-recent-aiqa-doubao-by-everything-ps1/">
         <h2 class="post-title">
             D24_03_search-recent-aiqa-doubao-by-everything-ps1
@@ -410,6 +376,58 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d30_06_combinqa-new/">
+        <h2 class="post-title">
+            D30_06_combinQA-new
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="qa-合併與分割工具">QA 合併與分割工具</h1>
+<p>這是一個用於處理問答題目的 Python 工具，主要功能是將問題（Q.md）和答案（A.md）文件合併，並將合併後的內容分割成單獨的文件。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li><strong>智能合併</strong>：自動將問題和答案按照題號配對合併</li>
+<li><strong>格式處理</strong>：自動處理複選題標記、圖片標記等特殊格式</li>
+<li><strong>連結統一</strong>：將所有 yamol.tw 連結統一為 item 連結</li>
+<li><strong>自動分割</strong>：將合併後的內容按題目分割成單獨的 Markdown 文件</li>
+<li><strong>文件命名</strong>：根據題目內容自動生成簡潔的文件名</li>
+</ul>
+<h2 id="項目結構">項目結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                 # 主程式
+├── run.bat               # Windows 批次執行檔
+├── 00_issue/             # 問題記錄
+├── 00_version/           # 版本歷史
+├── beforeQA/             # 範例資料
+├── output/               # 輸出目錄
+├── probQA/               # 問題資料
+└── test/                 # 測試資料
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
+<ol>
+<li>將您的 <code>Q.md</code> 和 <code>A.md</code> 文件放在同一個資料夾中</li>
+<li>在該資料夾中執行 <code>run.bat</code></li>
+<li>程式會自動處理並在 <code>output/</code> 資料夾中生成結果</li>
+</ol>
+<h3 id="方法二直接執行-python">方法二：直接執行 Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py &lt;工作目錄路徑&gt;
+</span></span></code></pre></div><p>例如：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 </div>
 
             
@@ -536,6 +554,8 @@
                
             
                
+            
+               
                     <a href="/tags/code" title="code">
                         code
                     </a>
@@ -544,6 +564,18 @@
                
                     <a href="/tags/ebook" title="ebook">
                         ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/eool" title="eool">
+                        eool
+                    </a>
+               
+            
+               
+                    <a href="/tags/essay" title="essay">
+                        essay
                     </a>
                
             
@@ -594,10 +626,14 @@
                
             
                
-            
-               
                     <a href="/tags/ui-user-feedback" title="ui-user-feedback">
                         ui-user-feedback
+                    </a>
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
                     </a>
                
             
@@ -607,6 +643,8 @@
                     <a href="/tags/video" title="video">
                         video
                     </a>
+               
+            
                
             
         </div>
@@ -634,13 +672,13 @@
         
             <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
-        
             <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
             <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
         </ul>
     </section>
