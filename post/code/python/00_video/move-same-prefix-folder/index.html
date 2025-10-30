@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="move-same-prefix-folder" />
+    <meta property="og:title" content="move-same-prefix-folder" />
+    <meta property="twitter:title" content="move-same-prefix-folder" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/post/code/python/00_video/move-same-prefix-folder/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>move-same-prefix-folder | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/post/code/python/00_video/move-same-prefix-folder/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="移動相同前綴資料夾工具">移動相同前綴資料夾工具</h1>
+<p>這是一個用於自動移動具有相同前綴的資料夾內容的 Python 應用程式。該工具可以根據資料夾名稱的前綴（下劃線前的部分）來匹配源目錄和目標目錄中的資料夾，並將源資料夾中的文件移動到匹配的目標資料夾中。</p>
+<h2 id="功能特點">功能特點</h2>
+<ul>
+<li>🔄 自動匹配具有相同前綴的資料夾</li>
+<li>📁 批量移動文件到對應的目標資料夾</li>
+<li>🗑️ 自動清理空的源資料夾</li>
+<li>🖥️ 提供圖形化用戶界面（GUI）</li>
+<li>📝 詳細的操作日誌輸出</li>
+</ul>
+<h2 id="文件結構">文件結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py          # 命令行版本
+├── gui.py          # 圖形化界面版本
+└── README.md       # 說明文件
+</code></pre><h2 id="安裝要求">安裝要求</h2>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>tkinter（通常隨 Python 一起安裝）</li>
+</ul>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="方法一圖形化界面推薦">方法一：圖形化界面（推薦）</h3>
+<ol>
+<li>
+<p>運行圖形化界面版本：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python gui.py
+</span></span></code></pre></div></li>
+<li>
+<p>在界面中：</p>
+<ul>
+<li>點擊 &ldquo;Select Source&rdquo; 選擇源目錄</li>
+<li>點擊 &ldquo;Select Destination&rdquo; 選擇目標目錄</li>
+<li>點擊 &ldquo;Move Folders&rdquo; 開始移動操作</li>
+</ul>
+</li>
+</ol>
+<h3 id="方法二命令行版本">方法二：命令行版本</h3>
+<ol>
+<li>
+<p>編輯 <code>app.py</code> 文件中的路徑：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>source_directory <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;你的源目錄路徑&#34;</span>
+</span></span><span style="display:flex;"><span>destination_directory <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;你的目標目錄路徑&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>運行程序：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="工作原理">工作原理</h2>
+<ol>
+<li><strong>前綴提取</strong>：從源目錄中的每個資料夾名稱提取前綴（下劃線前的部分）</li>
+<li><strong>匹配查找</strong>：在目標目錄中查找以相同前綴開頭的資料夾</li>
+<li><strong>文件移動</strong>：將源資料夾中的所有文件移動到匹配的目標資料夾</li>
+<li><strong>清理</strong>：移動完成後刪除空的源資料夾</li>
+</ol>
+<h2 id="範例">範例</h2>
+<p>假設有以下目錄結構：</p>
+<p><strong>源目錄：</strong></p>
+<pre tabindex="0"><code>source/
+├── 001_資料夾A/
+│   ├── 文件1.txt
+│   └── 文件2.txt
+└── 002_資料夾B/
+    └── 文件3.txt
+</code></pre><p><strong>目標目錄：</strong></p>
+<pre tabindex="0"><code>destination/
+├── 001_目標資料夾A/
+└── 002_目標資料夾B/
+</code></pre><p><strong>執行後：</strong></p>
+<pre tabindex="0"><code>destination/
+├── 001_目標資料夾A/
+│   ├── 文件1.txt
+│   └── 文件2.txt
+└── 002_目標資料夾B/
+    └── 文件3.txt
+</code></pre><h2 id="注意事項">注意事項</h2>
+<ul>
+<li>⚠️ 請確保在執行前備份重要文件</li>
+<li>📂 源目錄和目標目錄必須存在且可訪問</li>
+<li>🔍 程序會根據資料夾名稱的前綴進行匹配</li>
+<li>📝 操作過程會在控制台顯示詳細日誌</li>
+</ul>
+<h2 id="錯誤處理">錯誤處理</h2>
+<ul>
+<li>如果找不到匹配的目標資料夾，程序會顯示相應的警告信息</li>
+<li>如果源目錄或目標目錄不存在，程序會顯示錯誤信息</li>
+<li>文件移動失敗時會顯示具體的錯誤信息</li>
+</ul>
+<h2 id="技術細節">技術細節</h2>
+<ul>
+<li>使用 <code>os.listdir()</code> 遍歷目錄</li>
+<li>使用 <code>shutil.move()</code> 移動文件</li>
+<li>使用 <code>os.rmdir()</code> 刪除空資料夾</li>
+<li>GUI 使用 tkinter 框架</li>
+</ul>
+<h2 id="授權">授權</h2>
+<p>此項目為開源軟件，可自由使用和修改。</p>
+<h2 id="貢獻">貢獻</h2>
+<p>歡迎提交問題報告和功能建議！</p>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'http:\/\/localhost:1313\/post\/code\/python\/00_video\/move-same-prefix-folder\/',
+        pageTitle: 'move-same-prefix-folder',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UI-User-Feedback on wikihuang Blog</title>
+    <link>http://localhost:1313/tags/ui-user-feedback/</link>
+    <description>Recent content in UI-User-Feedback on wikihuang Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ui-user-feedback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wishcse-tidy-flow</title>
+      <link>http://localhost:1313/post/code/python/00_ui-user-feedback/wishcase/wishcse-tidy-flow/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_ui-user-feedback/wishcase/wishcse-tidy-flow/</guid>
+      <description>&lt;h1 id=&#34;wish-case-oop---志願選填系統&#34;&gt;Wish Case OOP - 志願選填系統&lt;/h1&gt;&#xA;&lt;p&gt;這是一個基於 Python 和 SQLite 的志願選填系統，採用物件導向程式設計（OOP）架構重新開發。&lt;/p&gt;&#xA;&lt;h2 id=&#34;-專案概述&#34;&gt;📋 專案概述&lt;/h2&gt;&#xA;&lt;p&gt;Wish Case OOP 是一個完整的志願選填系統，提供學生登入、資料查詢、學校科系資訊管理等功能。系統採用現代化的 Web 介面設計，支援響應式布局和直觀的用戶體驗。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>school-wish-pdf-extract-jpg-name-by-title</title>
+      <link>http://localhost:1313/post/code/python/00_ui-user-feedback/wishcase/school-wish-pdf-extract-jpg-name-by-title/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_ui-user-feedback/wishcase/school-wish-pdf-extract-jpg-name-by-title/</guid>
+      <description>&lt;h1 id=&#34;pdf-標題和圖片提取工具&#34;&gt;PDF 標題和圖片提取工具&lt;/h1&gt;&#xA;&lt;p&gt;這個工具可以從 PDF 文件中提取每頁的標題和圖片內容，並將每個圖片保存為以對應頁面標題命名的 JPG 文件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;安裝依賴項&#34;&gt;安裝依賴項&lt;/h2&gt;&#xA;&lt;p&gt;在運行腳本之前，請先安裝所需的 Python 包：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

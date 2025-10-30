@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="D18_07_html-to-folder-tree" />
+    <meta property="og:title" content="D18_07_html-to-folder-tree" />
+    <meta property="twitter:title" content="D18_07_html-to-folder-tree" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/post/code/python/00_ebook/ch-toc-searchable-@@flow/d18_07_html-to-folder-tree/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>D18_07_html-to-folder-tree | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/post/code/python/00_ebook/ch-toc-searchable-@@flow/d18_07_html-to-folder-tree/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="html-目錄轉資料夾結構工具">HTML 目錄轉資料夾結構工具</h1>
+<p>這是一個 Python 應用程式，用於將 HTML 格式的目錄結構轉換為實際的資料夾層次結構，並為每個章節創建 PDF 頁面捷徑。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📁 解析 HTML 目錄結構（<code>&lt;ul&gt;</code> 和 <code>&lt;li&gt;</code> 標籤）</li>
+<li>🗂️ 自動創建對應的資料夾層次結構</li>
+<li>🔢 為每個資料夾添加層次編號前綴（如 <code>01.00.00_</code>）</li>
+<li>🔗 為每個章節創建 PDF 頁面捷徑（<code>.lnk</code> 檔案）</li>
+<li>🧹 自動清理資料夾名稱，移除 Windows 不允許的字符</li>
+<li>📖 支援多層巢狀目錄結構</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                    # 主要應用程式檔案
+├── Coding-Interviews.htm     # 輸入的 HTML 目錄檔案
+├── folder/                   # 生成的資料夾結構
+│   ├── 00_Cover/
+│   ├── 01_Chapter-1_-Interview-Process/
+│   ├── 02_Chapter-2_-Programming-Languages/
+│   └── ...
+├── 00_issue/                 # 問題描述
+├── 00_ref/                   # 參考檔案
+└── README.md                 # 本說明檔案
+</code></pre><h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6+</li>
+<li>Windows 作業系統（用於創建 <code>.lnk</code> 捷徑）</li>
+<li>以下 Python 套件：
+<ul>
+<li><code>beautifulsoup4</code> - HTML 解析</li>
+<li><code>pywin32</code> - Windows COM 介面</li>
+</ul>
+</li>
+</ul>
+<h2 id="安裝步驟">安裝步驟</h2>
+<ol>
+<li>確保已安裝 Python 3.6 或更高版本</li>
+<li>安裝必要的套件：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install beautifulsoup4 pywin32
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<ol>
+<li>將您的 HTML 目錄檔案命名為 <code>Coding-Interviews.htm</code> 並放在專案根目錄</li>
+<li>在 <code>app.py</code> 中修改 PDF 檔案路徑（第 115 行）：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pdf_path <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;您的PDF檔案路徑&#34;</span>
+</span></span></code></pre></div></li>
+<li>執行程式：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="輸出結果">輸出結果</h2>
+<p>程式會：</p>
+<ol>
+<li>在 <code>folder/</code> 目錄下創建對應的資料夾結構</li>
+<li>每個資料夾名稱格式為：<code>層次編號_清理後的章節名稱</code></li>
+<li>在每個資料夾中創建對應 PDF 頁面的捷徑檔案（<code>.lnk</code>）</li>
+</ol>
+<h3 id="範例輸出結構">範例輸出結構</h3>
+<pre tabindex="0"><code>folder/
+├── 00.00_Contents-at-a-Glance/
+│   └── 3.lnk
+├── 00.01_Table-of-Contents/
+│   └── 287.lnk
+├── 01.00.00_Phone-Interviews/
+│   └── 6.lnk
+└── 01.00.01_On-Site-Interviews/
+    └── 8.lnk
+</code></pre><h2 id="程式碼說明">程式碼說明</h2>
+<h3 id="主要功能">主要功能</h3>
+<ul>
+<li><strong><code>clean_folder_name()</code></strong>: 清理資料夾名稱，移除非法字符</li>
+<li><strong><code>create_pdf_shortcut()</code></strong>: 創建 PDF 頁面捷徑</li>
+<li><strong><code>Node</code> 類別</strong>: 表示目錄樹節點</li>
+<li><strong><code>build_tree()</code></strong>: 建構目錄樹結構</li>
+<li><strong><code>create_folder_structure()</code></strong>: 創建實際的資料夾結構</li>
+</ul>
+<h3 id="html-格式要求">HTML 格式要求</h3>
+<p>輸入的 HTML 檔案應包含巢狀的 <code>&lt;ul&gt;</code> 和 <code>&lt;li&gt;</code> 結構，每個 <code>&lt;li&gt;</code> 包含一個 <code>&lt;a&gt;</code> 標籤，其中：</p>
+<ul>
+<li><code>href</code> 屬性包含 PDF 頁面資訊（如 <code>#page=123</code>）</li>
+<li>文字內容為章節標題</li>
+</ul>
+<h2 id="注意事項">注意事項</h2>
+<ul>
+<li>此工具專為 Windows 系統設計，使用 Windows COM 介面創建捷徑</li>
+<li>需要安裝 Adobe Acrobat DC 或修改捷徑目標路徑</li>
+<li>資料夾名稱會自動清理，移除 Windows 不允許的字符</li>
+<li>程式會自動跳過空名稱或無效的目錄項目</li>
+</ul>
+<h2 id="自訂設定">自訂設定</h2>
+<p>您可以修改以下設定：</p>
+<ol>
+<li>
+<p><strong>PDF 路徑</strong>（第 115 行）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pdf_path <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;您的PDF檔案完整路徑&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>輸出目錄</strong>（第 122 行）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>output_dir <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;您的輸出目錄名稱&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Adobe Acrobat 路徑</strong>（第 43 行）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>shortcut<span style="color:#ff79c6">.</span>Targetpath <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;您的Acrobat執行檔路徑&#34;</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="故障排除">故障排除</h2>
+<ul>
+<li><strong>ImportError</strong>: 確保已安裝所有必要的套件</li>
+<li><strong>COM 錯誤</strong>: 確保在 Windows 系統上執行</li>
+<li><strong>PDF 捷徑無法開啟</strong>: 檢查 Adobe Acrobat 安裝路徑和 PDF 檔案路徑</li>
+<li><strong>資料夾創建失敗</strong>: 檢查檔案權限和磁碟空間</li>
+</ul>
+<h2 id="授權">授權</h2>
+<p>此專案僅供學習和個人使用。</p>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'http:\/\/localhost:1313\/post\/code\/python\/00_ebook\/ch-toc-searchable-@@flow\/d18_07_html-to-folder-tree\/',
+        pageTitle: 'D18_07_html-to-folder-tree',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

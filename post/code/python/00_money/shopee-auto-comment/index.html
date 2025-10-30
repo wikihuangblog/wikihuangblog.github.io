@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="shopee-auto-comment" />
+    <meta property="og:title" content="shopee-auto-comment" />
+    <meta property="twitter:title" content="shopee-auto-comment" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/post/code/python/00_money/shopee-auto-comment/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>shopee-auto-comment | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/post/code/python/00_money/shopee-auto-comment/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="shopee-自動評價腳本">Shopee 自動評價腳本</h1>
+<p>這是一個用於 Shopee 購物平台的 Tampermonkey 自動評價腳本，可以自動完成商品評價、評論填寫、照片和影片上傳等功能。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>⭐ <strong>自動五星評價</strong>：一鍵點擊五星評分</li>
+<li>💬 <strong>智能評論填寫</strong>：自動填入預設的正面評論</li>
+<li>📸 <strong>照片上傳</strong>：自動觸發照片上傳功能</li>
+<li>🎥 <strong>影片上傳</strong>：自動觸發影片上傳功能</li>
+<li>🔄 <strong>批量處理</strong>：支援多個商品的批量評價</li>
+<li>⌨️ <strong>快捷鍵操作</strong>：使用 F6-F10 快捷鍵進行操作</li>
+</ul>
+<h2 id="安裝說明">安裝說明</h2>
+<h3 id="前置需求">前置需求</h3>
+<ul>
+<li>安裝 <a href="https://www.tampermonkey.net/">Tampermonkey</a> 瀏覽器擴展</li>
+<li>支援的瀏覽器：Chrome、Firefox、Edge、Safari</li>
+</ul>
+<h3 id="安裝步驟">安裝步驟</h3>
+<ol>
+<li>複製 <code>app.js</code> 中的完整代碼</li>
+<li>打開 Tampermonkey 管理面板</li>
+<li>點擊「新增腳本」</li>
+<li>貼上代碼並儲存</li>
+<li>前往 <a href="https://shopee.tw/user/purchase/?type=3">Shopee 評價頁面</a></li>
+</ol>
+<h2 id="使用說明">使用說明</h2>
+<h3 id="快捷鍵功能">快捷鍵功能</h3>
+<ul>
+<li><strong>F6</strong>：點擊五星評價</li>
+<li><strong>F7</strong>：填寫評論</li>
+<li><strong>F8</strong>：觸發照片上傳</li>
+<li><strong>F9</strong>：觸發影片上傳</li>
+<li><strong>F10</strong>：移動到下一個商品</li>
+</ul>
+<h3 id="操作流程">操作流程</h3>
+<ol>
+<li>前往 Shopee 的「待評價」頁面</li>
+<li>點擊要評價的商品</li>
+<li>使用快捷鍵依序完成：
+<ul>
+<li>按 F6 進行五星評價</li>
+<li>按 F7 填寫評論</li>
+<li>按 F8 上傳照片（可選）</li>
+<li>按 F9 上傳影片（可選）</li>
+<li>按 F10 切換到下一個商品</li>
+</ul>
+</li>
+</ol>
+<h2 id="預設評論內容">預設評論內容</h2>
+<p>腳本包含 5 種不同的正面評論模板，會隨機選擇使用：</p>
+<ol>
+<li>&ldquo;商品品質很好，包裝完整,出貨速度快，賣家服務態度很好！&hellip;&rdquo;</li>
+<li>&ldquo;非常滿意這次的購物體驗，商品和描述的一樣，值得推薦！&hellip;&rdquo;</li>
+<li>&ldquo;商品收到了，品質不錯，賣家出貨速度快，包裝也很完整，很滿意！&hellip;&rdquo;</li>
+<li>&ldquo;很棒的賣家，出貨速度快，商品品質優良，會再回購的！&hellip;&rdquo;</li>
+<li>&ldquo;商品品質超乎預期，賣家服務很好，出貨速度快，五星好評！&hellip;&rdquo;</li>
+</ol>
+<h2 id="版本歷史">版本歷史</h2>
+<h3 id="當前版本-v99_currentjs">當前版本 (v99_current.js)</h3>
+<ul>
+<li>分離式操作：每個功能獨立按鍵控制</li>
+<li>改進的焦點管理</li>
+<li>更好的錯誤處理</li>
+</ul>
+<h3 id="版本演進">版本演進</h3>
+<ul>
+<li><strong>v1-v3</strong>：基礎功能開發</li>
+<li><strong>v4-v5</strong>：評論功能完善</li>
+<li><strong>v6.0-v6.2</strong>：影片上傳功能開發</li>
+<li><strong>v7.0-v7.1</strong>：分離式操作實現</li>
+</ul>
+<h2 id="技術細節">技術細節</h2>
+<h3 id="主要功能模組">主要功能模組</h3>
+<ul>
+<li><code>initializeRatingContainers()</code>：初始化評價容器</li>
+<li><code>handleRating()</code>：處理五星評價點擊</li>
+<li><code>handleComment()</code>：處理評論填寫</li>
+<li><code>handlePhotoUpload()</code>：處理照片上傳</li>
+<li><code>handleVideoUpload()</code>：處理影片上傳</li>
+<li><code>moveToNextContainer()</code>：切換到下一個商品</li>
+</ul>
+<h3 id="選擇器說明">選擇器說明</h3>
+<ul>
+<li>評價容器：<code>.rating-modal-handler__container</code></li>
+<li>五星按鈕：<code>div.rating-stars__star--clickable[4]</code></li>
+<li>評論框：<code>textarea.pFkDf6[placeholder*=&quot;分享更多關於此商品的評價&quot;]</code></li>
+<li>文件上傳：<code>input.mXvRBf</code></li>
+</ul>
+<h2 id="注意事項">注意事項</h2>
+<p>⚠️ <strong>重要提醒</strong>：</p>
+<ul>
+<li>請確保在合法合規的前提下使用此腳本</li>
+<li>建議僅用於自己的真實購物評價</li>
+<li>使用前請先備份重要資料</li>
+<li>如遇到問題，請檢查 Tampermonkey 是否正常運行</li>
+</ul>
+<h2 id="故障排除">故障排除</h2>
+<h3 id="常見問題">常見問題</h3>
+<ol>
+<li><strong>腳本無法運行</strong>：檢查 Tampermonkey 是否已安裝並啟用</li>
+<li><strong>按鍵無反應</strong>：確認頁面已完全載入，並在正確的評價頁面</li>
+<li><strong>上傳功能失效</strong>：檢查瀏覽器是否允許文件上傳權限</li>
+</ol>
+<h3 id="除錯方法">除錯方法</h3>
+<ul>
+<li>打開瀏覽器開發者工具 (F12)</li>
+<li>查看 Console 面板的日誌訊息</li>
+<li>確認選擇器是否正確匹配頁面元素</li>
+</ul>
+<h2 id="開發者資訊">開發者資訊</h2>
+<ul>
+<li><strong>腳本類型</strong>：Tampermonkey UserScript</li>
+<li><strong>目標網站</strong>：Shopee.tw</li>
+<li><strong>更新日期</strong>：2025-02-08</li>
+<li><strong>授權</strong>：MIT License</li>
+</ul>
+<h2 id="貢獻">貢獻</h2>
+<p>歡迎提交 Issue 和 Pull Request 來改善此腳本。</p>
+<hr>
+<p><strong>免責聲明</strong>：此腳本僅供學習和研究使用，使用者需自行承擔使用風險。</p>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'http:\/\/localhost:1313\/post\/code\/python\/00_money\/shopee-auto-comment\/',
+        pageTitle: 'shopee-auto-comment',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

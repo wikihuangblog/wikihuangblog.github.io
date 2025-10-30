@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="crawl-ebook" />
+    <meta property="og:title" content="crawl-ebook" />
+    <meta property="twitter:title" content="crawl-ebook" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/post/code/python/00_ebook/crawl-ebook-@@flow/crawl-ebook/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>crawl-ebook | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/post/code/python/00_ebook/crawl-ebook-@@flow/crawl-ebook/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="華藝電子書爬蟲專案">華藝電子書爬蟲專案</h1>
+<p>這是一個用於爬取華藝電子書網站書籍資訊的 Python 專案，支援自動化爬取書籍標題、URL 連結、封面圖片和目錄內容。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🚀 <strong>異步爬取</strong>：使用 Playwright 和 asyncio 實現高效異步爬取</li>
+<li>📚 <strong>多分類支援</strong>：支援按分類爬取不同類別的書籍</li>
+<li>🖼️ <strong>圖片下載</strong>：自動下載書籍封面圖片</li>
+<li>📄 <strong>目錄爬取</strong>：可選功能，爬取書籍目錄並儲存為 HTML</li>
+<li>🔄 <strong>斷點續傳</strong>：支援記錄爬取進度，可從上次中斷處繼續</li>
+<li>📁 <strong>檔案整理</strong>：自動整理下載的檔案到對應資料夾</li>
+<li>🔍 <strong>重複檢測</strong>：自動檢測並處理重複檔案</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>crawl-ebook/
+├── app.py                 # 原始爬蟲腳本（舊版本）
+├── main.py               # 主程式入口
+├── libs/                 # 核心模組
+│   ├── BookCrawler.py    # 書籍爬蟲類別
+│   ├── Config.py         # 配置管理
+│   └── FileManager.py    # 檔案管理
+├── 華藝電子書分類/        # 分類配置目錄
+│   └── 00_target/        # 目標分類 URL 檔案
+├── output/               # 輸出目錄
+├── 00_temp-ready-move-area/ # 臨時檔案區域
+│   ├── urls/            # URL 檔案
+│   └── images/          # 圖片檔案
+├── toc_html/            # 目錄 HTML 檔案
+└── crawler_config.json  # 爬蟲配置檔案
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.7+</li>
+<li>Windows 10/11</li>
+</ul>
+<h3 id="依賴套件">依賴套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install playwright aiohttp configparser
+</span></span></code></pre></div><h3 id="安裝-playwright-瀏覽器">安裝 Playwright 瀏覽器</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>playwright install chromium
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備分類-url-檔案">1. 準備分類 URL 檔案</h3>
+<p>在 <code>華藝電子書分類/00_target/</code> 目錄下放置 <code>.url</code> 檔案，每個檔案代表一個書籍分類。</p>
+<h3 id="2-執行爬蟲">2. 執行爬蟲</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python main.py
+</span></span></code></pre></div><h3 id="3-配置選項">3. 配置選項</h3>
+<p>在 <code>libs/Config.py</code> 中可以調整以下設定：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>USE_AUTO_PAGE_CALCULATION <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>  <span style="color:#6272a4"># 是否自動計算總頁數</span>
+</span></span><span style="display:flex;"><span>TEST_PAGE_NUMBER <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>              <span style="color:#6272a4"># 測試模式下的固定頁數</span>
+</span></span><span style="display:flex;"><span>PAGE_SIZE <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">20</span>                    <span style="color:#6272a4"># 每頁顯示的書籍數量</span>
+</span></span><span style="display:flex;"><span>SORT_TYPE <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">5</span>                     <span style="color:#6272a4"># 排序方式</span>
+</span></span></code></pre></div><h2 id="核心模組說明">核心模組說明</h2>
+<h3 id="bookcrawler">BookCrawler</h3>
+<ul>
+<li>負責主要的爬取邏輯</li>
+<li>支援分頁爬取</li>
+<li>可選的圖片下載功能</li>
+<li>目錄內容爬取</li>
+</ul>
+<h3 id="filemanager">FileManager</h3>
+<ul>
+<li>管理檔案儲存和整理</li>
+<li>處理檔名清理</li>
+<li>重複檔案檢測</li>
+</ul>
+<h3 id="config">Config</h3>
+<ul>
+<li>管理爬蟲配置</li>
+<li>記錄爬取進度</li>
+<li>支援斷點續傳</li>
+</ul>
+<h2 id="輸出檔案說明">輸出檔案說明</h2>
+<h3 id="url-檔案-url">URL 檔案 (.url)</h3>
+<p>儲存每本書的詳細頁面連結，格式為 Windows 網際網路捷徑檔案。</p>
+<h3 id="圖片檔案-jpg">圖片檔案 (.jpg)</h3>
+<p>書籍封面圖片，檔名與書籍標題對應。</p>
+<h3 id="目錄檔案-html">目錄檔案 (.html)</h3>
+<p>書籍目錄內容，以 HTML 格式儲存，便於瀏覽。</p>
+<h3 id="配置檔案-crawler_configjson">配置檔案 (crawler_config.json)</h3>
+<p>記錄最後爬取的頁碼，用於斷點續傳功能。</p>
+<h2 id="注意事項">注意事項</h2>
+<ol>
+<li><strong>網路連線</strong>：確保網路連線穩定，爬取過程中避免中斷</li>
+<li><strong>目標網站</strong>：請遵守網站的使用條款，避免過於頻繁的請求</li>
+<li><strong>儲存空間</strong>：確保有足夠的磁碟空間儲存下載的檔案</li>
+<li><strong>瀏覽器模式</strong>：預設為非無頭模式，可在 <code>BookCrawler.py</code> 中修改為 <code>headless=True</code></li>
+</ol>
+<h2 id="故障排除">故障排除</h2>
+<h3 id="常見問題">常見問題</h3>
+<ol>
+<li>
+<p><strong>Playwright 安裝失敗</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --upgrade pip
+</span></span><span style="display:flex;"><span>pip install playwright
+</span></span><span style="display:flex;"><span>playwright install chromium
+</span></span></code></pre></div></li>
+<li>
+<p><strong>網路連線錯誤</strong></p>
+<ul>
+<li>檢查網路連線</li>
+<li>確認目標網站可正常訪問</li>
+</ul>
+</li>
+<li>
+<p><strong>檔案權限錯誤</strong></p>
+<ul>
+<li>確保對輸出目錄有寫入權限</li>
+<li>以管理員身份執行（如需要）</li>
+</ul>
+</li>
+</ol>
+<h2 id="開發說明">開發說明</h2>
+<h3 id="擴展功能">擴展功能</h3>
+<ul>
+<li>可在 <code>BookCrawler.py</code> 中添加新的爬取功能</li>
+<li>在 <code>FileManager.py</code> 中擴展檔案處理邏輯</li>
+<li>修改 <code>Config.py</code> 添加新的配置選項</li>
+</ul>
+<h3 id="程式碼結構">程式碼結構</h3>
+<ul>
+<li>使用異步程式設計提高效率</li>
+<li>模組化設計便於維護和擴展</li>
+<li>錯誤處理機制確保程式穩定性</li>
+</ul>
+<h2 id="授權">授權</h2>
+<p>本專案僅供學習和研究使用，請遵守相關法律法規和網站使用條款。</p>
+<h2 id="更新日誌">更新日誌</h2>
+<ul>
+<li><strong>v1.0.0</strong>：初始版本，支援基本爬取功能</li>
+<li><strong>v1.1.0</strong>：添加模組化架構和配置管理</li>
+<li><strong>v1.2.0</strong>：支援斷點續傳和檔案整理功能</li>
+</ul>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'http:\/\/localhost:1313\/post\/code\/python\/00_ebook\/crawl-ebook-@@flow\/crawl-ebook\/',
+        pageTitle: 'crawl-ebook',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

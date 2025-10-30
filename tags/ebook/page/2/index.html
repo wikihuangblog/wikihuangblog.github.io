@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content="" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/tags/ebook/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Ebook | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/tags/ebook/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+  
+<div data-pagefind-ignore="all" class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+<div data-pagefind-ignore="all">
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_ebook/ch-toc-searchable-@@flow/d18_07_html-to-folder-tree/">
+        <h2 class="post-title">
+            D18_07_html-to-folder-tree
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="html-目錄轉資料夾結構工具">HTML 目錄轉資料夾結構工具</h1>
+<p>這是一個 Python 應用程式，用於將 HTML 格式的目錄結構轉換為實際的資料夾層次結構，並為每個章節創建 PDF 頁面捷徑。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📁 解析 HTML 目錄結構（<code>&lt;ul&gt;</code> 和 <code>&lt;li&gt;</code> 標籤）</li>
+<li>🗂️ 自動創建對應的資料夾層次結構</li>
+<li>🔢 為每個資料夾添加層次編號前綴（如 <code>01.00.00_</code>）</li>
+<li>🔗 為每個章節創建 PDF 頁面捷徑（<code>.lnk</code> 檔案）</li>
+<li>🧹 自動清理資料夾名稱，移除 Windows 不允許的字符</li>
+<li>📖 支援多層巢狀目錄結構</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                    # 主要應用程式檔案
+├── Coding-Interviews.htm     # 輸入的 HTML 目錄檔案
+├── folder/                   # 生成的資料夾結構
+│   ├── 00_Cover/
+│   ├── 01_Chapter-1_-Interview-Process/
+│   ├── 02_Chapter-2_-Programming-Languages/
+│   └── ...
+├── 00_issue/                 # 問題描述
+├── 00_ref/                   # 參考檔案
+└── README.md                 # 本說明檔案
+</code></pre><h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6+</li>
+<li>Windows 作業系統（用於創建 <code>.lnk</code> 捷徑）</li>
+<li>以下 Python 套件：
+<ul>
+<li><code>beautifulsoup4</code> - HTML 解析</li>
+<li><code>pywin32</code> - Windows COM 介面</li>
+</ul>
+</li>
+</ul>
+<h2 id="安裝步驟">安裝步驟</h2>
+<ol>
+<li>確保已安裝 Python 3.6 或更高版本</li>
+<li>安裝必要的套件：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install beautifulsoup4 pywin32
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<ol>
+<li>將您的 HTML 目錄檔案命名為 <code>Coding-Interviews.htm</code> 並放在專案根目錄</li>
+<li>在 <code>app.py</code> 中修改 PDF 檔案路徑（第 115 行）：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pdf_path <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#34;您的PDF檔案路徑&#34;</span>
+</span></span></code></pre></div></li>
+<li>執行程式：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="輸出結果">輸出結果</h2>
+<p>程式會：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Sunday, October 5, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_ebook/crawl-ebook-@@flow/extract-toc-cover-thumbnail/">
+        <h2 class="post-title">
+            extract-toc-cover-thumbnail
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="電子書目錄與封面提取工具">電子書目錄與封面提取工具</h1>
+<p>這是一個用於從電子書網站提取目錄（TOC）、封面縮略圖和相關資訊的 Python 工具。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔍 <strong>自動化目錄提取</strong>：從指定的電子書網站自動提取章節目錄</li>
+<li>🖼️ <strong>封面縮略圖下載</strong>：提取並保存書籍封面圖片</li>
+<li>📁 <strong>批次處理</strong>：支援大量 .url 檔案的批次處理</li>
+<li>🧹 <strong>內容清理</strong>：自動移除不必要的圖片和樣式元素</li>
+<li>📄 <strong>HTML 輸出</strong>：將提取的內容保存為格式化的 HTML 檔案</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                          # 主要程式檔案
+├── 00_temp-ready-move-area/        # 待處理的 URL 檔案存放區
+│   └── urls/
+│       └── 語言/                   # 按語言分類的 URL 檔案
+│           ├── eng2/               # 英文書籍 URL
+│           ├── 多益/               # 多益相關書籍 URL
+│           └── 英文/               # 英文學習書籍 URL
+├── 00_url-for-toc/                 # 用於目錄提取的 URL 檔案
+│   └── urls/
+├── htmlToc/                        # 輸出的 HTML 目錄檔案（執行後生成）
+└── ref/                            # 參考檔案
+    └── oriContent.html             # 原始網頁內容範例
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests beautifulsoup4
+</span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 作業系統（程式碼中包含 Windows 路徑格式）</li>
+</ul>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備-url-檔案">1. 準備 URL 檔案</h3>
+<p>將要處理的電子書 URL 檔案放置在 <code>00_url-for-toc/urls/</code> 目錄中。URL 檔案格式如下：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Sunday, October 5, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_ebook/ch-toc-searchable-@@flow/split-big-toc-into-each-chapter/">
+        <h2 class="post-title">
+            split-big-toc-into-each-chapter
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="電子書目錄分割工具">電子書目錄分割工具</h1>
+<p>這是一個用於處理電子書目錄的 Python 工具，可以將大型的目錄文件自動分割成各個章節的獨立 Markdown 文件，並進行格式化處理。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📚 <strong>自動章節分割</strong>：將大型目錄文件按章節自動分割</li>
+<li>🔧 <strong>智能格式化</strong>：自動處理標題格式、編號和空格</li>
+<li>📁 <strong>結構化組織</strong>：為每個章節創建獨立的資料夾和文件</li>
+<li>🏷️ <strong>標準化命名</strong>：使用統一的章節編號格式（ch01, ch02&hellip;）</li>
+<li>🔄 <strong>批量處理</strong>：一次性處理整個目錄結構</li>
+</ul>
+<h2 id="項目結構">項目結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                 # 主程序文件
+├── toc.md                # 原始目錄文件
+├── toc_modified.md       # 格式化後的目錄文件
+├── chapter/              # 章節文件輸出目錄
+├── 00_issue/            # 問題記錄目錄
+│   └── issue.md
+├── ref/                 # 參考文件目錄
+│   └── format-toc.py
+└── run.bat              # Windows 批次執行文件
+</code></pre><h2 id="安裝與使用">安裝與使用</h2>
+<h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 系統（支援批次文件執行）</li>
+</ul>
+<h3 id="使用方法">使用方法</h3>
+<h4 id="方法一使用批次文件推薦">方法一：使用批次文件（推薦）</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 在 Windows 命令提示字元中執行</span>
+</span></span><span style="display:flex;"><span>run.bat toc.md
+</span></span></code></pre></div><h4 id="方法二直接執行-python-腳本">方法二：直接執行 Python 腳本</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 在專案根目錄執行</span>
+</span></span><span style="display:flex;"><span>python app.py toc.md
+</span></span></code></pre></div><h3 id="參數說明">參數說明</h3>
+<ul>
+<li><code>toc.md</code>：輸入的目錄文件路徑（必需參數）</li>
+</ul>
+<h2 id="處理流程">處理流程</h2>
+<ol>
+<li><strong>讀取輸入文件</strong>：載入指定的目錄文件</li>
+<li><strong>格式化處理</strong>：
+<ul>
+<li>將中文括號 <code>（）</code> 轉換為英文括號 <code>()</code></li>
+<li>處理標題層級和編號格式</li>
+<li>統一章節編號格式為 <code>ch01_</code>, <code>ch02_</code> 等</li>
+</ul>
+</li>
+<li><strong>生成格式化文件</strong>：保存為 <code>toc_modified.md</code></li>
+<li><strong>分割章節</strong>：
+<ul>
+<li>按 <code>### </code> 標記分割章節</li>
+<li>為每個章節創建獨立資料夾</li>
+<li>生成對應的 Markdown 文件</li>
+</ul>
+</li>
+</ol>
+<h2 id="輸出結果">輸出結果</h2>
+<p>執行完成後，會在 <code>chapter/</code> 目錄下生成以下結構：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Sunday, October 5, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_ebook/toc-url-preview/">
+        <h2 class="post-title">
+            toc-url-preview
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="toc-url-preview-工具">TOC URL Preview 工具</h1>
+<p>這是一個用於將目錄（Table of Contents）轉換為 Google 搜尋 URL 預覽文件的工具。當您有一個完整的章節目錄時，這個工具可以幫助您快速生成所有章節的 Google 搜尋結果預覽，讓您能夠快速瀏覽相關資訊。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Sunday, October 5, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_ebook/ch-toc-searchable-@@flow/txt-to-multi-column-pic/">
+        <h2 class="post-title">
+            txt-to-multi-column-pic
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <p>以下是這個專案的說明文件，我會使用 YAML front matter 來包含關鍵字資訊：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: 多欄文字轉圖片工具
+</span></span><span style="display:flex;"><span>description: 將文字檔案轉換為多欄排版的圖片格式
+</span></span><span style="display:flex;"><span>keywords:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> Python
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> PIL
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> 圖片生成
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> 文字排版
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> 多欄布局
+</span></span><span style="display:flex;"><span>dependencies:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> Pillow (PIL)
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-</span> Python 3.x
+</span></span><span style="display:flex;"><span>author: Anonymous
+</span></span><span style="display:flex;"><span>created: 2024
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold"># 多欄文字轉圖片工具說明文件
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">## 功能概述
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>這個工具可以將純文字檔案轉換成多欄排版的圖片，支援自定義欄數、字體大小和圖片高度，適合用於製作文字展示海報或資料視覺化。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">## 主要功能
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span><span style="color:#ff79c6">-</span> 支援多欄文字排版
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 自動處理中文字體
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 跨平台字體支援（Windows/MacOS/Linux）
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 可自定義圖片尺寸和字體大小
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">## 技術細節
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">### 字體處理
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>程式會自動檢測並使用以下字體路徑：
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> MacOS: <span style="color:#f1fa8c">`/System/Library/Fonts/PingFang.ttc`</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> Linux: <span style="color:#f1fa8c">`/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf`</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> Windows: <span style="color:#f1fa8c">`C:\Windows\Fonts\msyh.ttc`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">### 參數說明
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span><span style="color:#ff79c6">-</span> <span style="color:#f1fa8c">`text`</span>: 輸入的文字內容
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> <span style="color:#f1fa8c">`num_columns`</span>: 欄數（預設值視需求而定）
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> <span style="color:#f1fa8c">`image_height`</span>: 圖片高度（預設 924 像素）
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> <span style="color:#f1fa8c">`font_size`</span>: 字體大小（預設 14 像素）
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> <span style="color:#f1fa8c">`column_width`</span>: 每欄寬度（固定 300 像素）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">### 輸出
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span><span style="color:#ff79c6">-</span> 輸出檔案名稱：<span style="color:#f1fa8c">`!!output.jpg`</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 格式：JPEG
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 背景：白色
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 文字顏色：黑色
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">## 使用範例
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>```python
+</span></span><span style="display:flex;"><span>create_multicolumn_image(text, num_columns=10, image_height=800, font_size=15)
+</span></span></code></pre></div><h2 id="注意事項">注意事項</h2>
+<ol>
+<li>確保輸入文字檔案使用 UTF-8 編碼</li>
+<li>系統需要安裝對應的中文字體</li>
+<li>文字量需要與欄數相匹配，避免排版溢出</li>
+</ol>
+<h2 id="可能的優化方向">可能的優化方向</h2>
+<ol>
+<li>自動調整欄寬以適應最長的文字行</li>
+<li>添加文字對齊選項</li>
+<li>支援更多輸出格式</li>
+<li>添加文字顏色自定義功能</li>
+<li>實現自動分頁功能</li>
+</ol>
+<h2 id="錯誤處理建議">錯誤處理建議</h2>
+<ul>
+<li>添加字體檔案存在性檢查</li>
+<li>添加輸入文字長度驗證</li>
+<li>處理圖片生成異常情況</li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Tuesday, May 27, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+</div>
+
+            
+
+
+<ul class="pager" data-pagefind-ignore="all">
+    
+    <li class="previous">
+        <a href="/tags/ebook/">&larr; Newer Posts</a>
+    </li>
+    
+    
+</ul>
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='/tags/ebook/index.xml' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

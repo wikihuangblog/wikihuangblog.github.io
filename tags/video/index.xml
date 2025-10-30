@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on wikihuang Blog</title>
+    <link>http://localhost:1313/tags/video/</link>
+    <description>Recent content in Video on wikihuang Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>crawl-html-sitemap</title>
+      <link>http://localhost:1313/post/code/python/00_video/crawl-html-sitemap/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/crawl-html-sitemap/</guid>
+      <description>&lt;h1 id=&#34;obsidian-文章連結爬蟲工具&#34;&gt;Obsidian 文章連結爬蟲工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於處理 Obsidian 相關文章連結的 Python 工具，可以從 sitemap.html 中提取文章連結並自動創建 .url 文件，按照文章編號進行分類整理。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔍 從 sitemap.html 中提取文章標題和連結&lt;/li&gt;&#xA;&lt;li&gt;📁 根據文章編號自動創建分類資料夾&lt;/li&gt;&#xA;&lt;li&gt;🏷️ 智能識別多種文章編號格式&lt;/li&gt;&#xA;&lt;li&gt;📝 自動生成 .url 文件，方便快速訪問&lt;/li&gt;&#xA;&lt;li&gt;🛡️ 自動處理無效的檔案名稱字符&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;支援的文章編號格式&#34;&gt;支援的文章編號格式&lt;/h2&gt;&#xA;&lt;p&gt;工具可以識別以下多種編號格式：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linkedin-topic-move-same-name-into-folder_trim-prefix-suffix</title>
+      <link>http://localhost:1313/post/code/python/00_video/linkedin-topic-move-same-name-into-folder_trim-prefix-suffix/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/linkedin-topic-move-same-name-into-folder_trim-prefix-suffix/</guid>
+      <description>&lt;h1 id=&#34;linkedin-主題檔案整理工具&#34;&gt;LinkedIn 主題檔案整理工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於自動整理 LinkedIn 相關檔案的 Python 工具，可以根據檔案名稱的前綴和後綴來分組並移動檔案到對應的資料夾中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔄 自動識別檔案名稱的前綴（數字_）和後綴（_@@、.lnk、.jpg、.zip 等）&lt;/li&gt;&#xA;&lt;li&gt;📁 根據核心檔案名稱自動分組檔案&lt;/li&gt;&#xA;&lt;li&gt;🚀 將相同主題的檔案移動到對應的資料夾中&lt;/li&gt;&#xA;&lt;li&gt;🛡️ 支援多種檔案格式（.jpg、.lnk、.zip、.html、.srt）&lt;/li&gt;&#xA;&lt;li&gt;⚡ 提供批次執行腳本&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;檔案說明&#34;&gt;檔案說明&lt;/h2&gt;&#xA;&lt;h3 id=&#34;主要腳本&#34;&gt;主要腳本&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;code&gt;linkedin-topic-move-same-name-into-folder_trim-prefix-suffix.py&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>lnk-target-folder-find-markdown</title>
+      <link>http://localhost:1313/post/code/python/00_video/lnk-target-folder-find-markdown/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/lnk-target-folder-find-markdown/</guid>
+      <description>&lt;h1 id=&#34;lnk-目標資料夾-markdown-檔案查找工具&#34;&gt;LNK 目標資料夾 Markdown 檔案查找工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於處理 Windows 快捷方式（.lnk）檔案的 Python 工具，能夠自動查找快捷方式指向的資料夾中的 Markdown 檔案，並更新快捷方式的目標路徑。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>move-same-name-into-folder</title>
+      <link>http://localhost:1313/post/code/python/00_video/move-same-name-into-folder/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/move-same-name-into-folder/</guid>
+      <description>&lt;h1 id=&#34;文件整理工具集&#34;&gt;文件整理工具集&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於自動整理和移動文件的 Python 工具集，主要用於將具有相同名稱前綴的文件移動到對應的資料夾中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🗂️ 自動創建資料夾並移動同名文件&lt;/li&gt;&#xA;&lt;li&gt;🎯 基於文件名前綴進行智能分類&lt;/li&gt;&#xA;&lt;li&gt;🖥️ 提供圖形化界面 (GUI) 版本&lt;/li&gt;&#xA;&lt;li&gt;📁 支援批量文件整理&lt;/li&gt;&#xA;&lt;li&gt;🔄 支援命令行和 GUI 兩種使用方式&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;文件說明&#34;&gt;文件說明&lt;/h2&gt;&#xA;&lt;h3 id=&#34;主要工具&#34;&gt;主要工具&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-move-same-name-into-folderpy&#34;&gt;1. &lt;code&gt;move-same-name-into-folder.py&lt;/code&gt;&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;功能&lt;/strong&gt;: 將具有相同名稱的文件移動到對應的資料夾中&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>move-same-prefix-folder</title>
+      <link>http://localhost:1313/post/code/python/00_video/move-same-prefix-folder/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/move-same-prefix-folder/</guid>
+      <description>&lt;h1 id=&#34;移動相同前綴資料夾工具&#34;&gt;移動相同前綴資料夾工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於自動移動具有相同前綴的資料夾內容的 Python 應用程式。該工具可以根據資料夾名稱的前綴（下劃線前的部分）來匹配源目錄和目標目錄中的資料夾，並將源資料夾中的文件移動到匹配的目標資料夾中。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>old-lynda-srt-samename-flow</title>
+      <link>http://localhost:1313/post/code/python/00_video/old-lynda-srt-samename-flow/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/old-lynda-srt-samename-flow/</guid>
+      <description>&lt;h1 id=&#34;視頻文件重命名工具&#34;&gt;視頻文件重命名工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於自動重命名視頻文件和字幕文件的 Python 工具，特別適用於處理 Lynda 課程文件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特點&#34;&gt;功能特點&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;自動重命名 MP4 文件&lt;/strong&gt;：將複雜的文件名格式轉換為簡潔的格式&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自動重命名 SRT 字幕文件&lt;/strong&gt;：提取並標準化字幕文件名&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;統一命名規則&lt;/strong&gt;：確保視頻文件和字幕文件使用相同的命名格式&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;零填充&lt;/strong&gt;：自動為數字前綴添加零填充（例如：1.1 → 01.01）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;文件結構&#34;&gt;文件結構&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;app/&#xD;&#xA;├── app.py          # 主程序文件&#xD;&#xA;├── run.bat         # Windows 批處理執行文件&#xD;&#xA;└── README.md       # 說明文檔&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;h3 id=&#34;方法一使用批處理文件推薦&#34;&gt;方法一：使用批處理文件（推薦）&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;將 &lt;code&gt;run.bat&lt;/code&gt; 和 &lt;code&gt;app.py&lt;/code&gt; 複製到包含需要重命名的視頻文件的目錄&lt;/li&gt;&#xA;&lt;li&gt;雙擊運行 &lt;code&gt;run.bat&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;方法二使用命令行&#34;&gt;方法二：使用命令行&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py &amp;lt;目標文件夾路徑&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例如：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>pbf-to-lnk</title>
+      <link>http://localhost:1313/post/code/python/00_video/pbf-to-lnk/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/pbf-to-lnk/</guid>
+      <description>&lt;h1 id=&#34;pbf-到-lnk-轉換器&#34;&gt;PBF 到 LNK 轉換器&lt;/h1&gt;&#xA;&lt;p&gt;這是一個Python應用程序，用於處理視頻時間文件（.pbf格式）並自動創建視頻播放器的快捷方式，讓您可以快速跳轉到視頻的特定時間點。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>run-all-lnk-in-folder</title>
+      <link>http://localhost:1313/post/code/python/00_video/run-all-lnk-in-folder/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_video/run-all-lnk-in-folder/</guid>
+      <description>&lt;h1 id=&#34;批量文件處理工具&#34;&gt;批量文件處理工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於批量處理文件的 Python 應用程序，主要功能包括處理 HTML 文件和 .lnk 快捷方式文件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-html-文件處理器-apppy&#34;&gt;1. HTML 文件處理器 (&lt;code&gt;app.py&lt;/code&gt;)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;自動掃描指定資料夾中的 HTML 文件&lt;/li&gt;&#xA;&lt;li&gt;從 HTML 文件中提取 URL 鏈接&lt;/li&gt;&#xA;&lt;li&gt;按順序打開每個 URL（使用瀏覽器）&lt;/li&gt;&#xA;&lt;li&gt;處理完成後自動移動文件到完成資料夾&lt;/li&gt;&#xA;&lt;li&gt;智能延遲計算，基於資料夾名稱中的數字範圍&lt;/li&gt;&#xA;&lt;li&gt;顯示預估完成時間&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-lnk-文件處理器-v1_app-open-by-lnkpy&#34;&gt;2. LNK 文件處理器 (&lt;code&gt;v1_app-open-by-lnk.py&lt;/code&gt;)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;掃描指定資料夾中的 .lnk 快捷方式文件&lt;/li&gt;&#xA;&lt;li&gt;自動打開每個快捷方式指向的應用程序&lt;/li&gt;&#xA;&lt;li&gt;記錄處理日誌&lt;/li&gt;&#xA;&lt;li&gt;處理完成後移動文件到完成資料夾&lt;/li&gt;&#xA;&lt;li&gt;支援多層級目錄掃描&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;系統需求&#34;&gt;系統需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 3.6+&lt;/li&gt;&#xA;&lt;li&gt;Windows 作業系統（使用 win32com 模組）&lt;/li&gt;&#xA;&lt;li&gt;以下 Python 套件：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;beautifulsoup4&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pywin32&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝依賴&#34;&gt;安裝依賴&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install beautifulsoup4 pywin32&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;h3 id=&#34;html-文件處理&#34;&gt;HTML 文件處理&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py &amp;lt;目標資料夾路徑&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;範例：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

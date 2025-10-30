@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on wikihuang Blog</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on wikihuang Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AIQA</title>
+      <link>http://localhost:1313/tags/aiqa/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aiqa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/tags/travel/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backup</title>
+      <link>http://localhost:1313/tags/backup/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>http://localhost:1313/tags/code/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exam---</title>
+      <link>http://localhost:1313/tags/exam---/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exam---/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mail</title>
+      <link>http://localhost:1313/tags/mail/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>http://localhost:1313/tags/manual/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/manual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Money</title>
+      <link>http://localhost:1313/tags/money/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/money/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/tags/search/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stastic</title>
+      <link>http://localhost:1313/tags/stastic/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stastic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Target</title>
+      <link>http://localhost:1313/tags/target/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/target/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tmp-Not-Organize</title>
+      <link>http://localhost:1313/tags/tmp-not-organize/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tmp-not-organize/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UI-User-Feedback</title>
+      <link>http://localhost:1313/tags/ui-user-feedback/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ui-user-feedback/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Version</title>
+      <link>http://localhost:1313/tags/version/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/version/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video</title>
+      <link>http://localhost:1313/tags/video/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/video/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ebook</title>
+      <link>http://localhost:1313/tags/ebook/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ebook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fail</title>
+      <link>http://localhost:1313/tags/fail/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fail/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

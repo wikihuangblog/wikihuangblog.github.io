@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content="" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+  
+<div data-pagefind-ignore="all" class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+<div data-pagefind-ignore="all">
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_tmp-not-organize/d30_06_combinqa-new/">
+        <h2 class="post-title">
+            D30_06_combinQA-new
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="qa-合併與分割工具">QA 合併與分割工具</h1>
+<p>這是一個用於處理問答題目的 Python 工具，主要功能是將問題（Q.md）和答案（A.md）文件合併，並將合併後的內容分割成單獨的文件。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li><strong>智能合併</strong>：自動將問題和答案按照題號配對合併</li>
+<li><strong>格式處理</strong>：自動處理複選題標記、圖片標記等特殊格式</li>
+<li><strong>連結統一</strong>：將所有 yamol.tw 連結統一為 item 連結</li>
+<li><strong>自動分割</strong>：將合併後的內容按題目分割成單獨的 Markdown 文件</li>
+<li><strong>文件命名</strong>：根據題目內容自動生成簡潔的文件名</li>
+</ul>
+<h2 id="項目結構">項目結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                 # 主程式
+├── run.bat               # Windows 批次執行檔
+├── 00_issue/             # 問題記錄
+├── 00_version/           # 版本歷史
+├── beforeQA/             # 範例資料
+├── output/               # 輸出目錄
+├── probQA/               # 問題資料
+└── test/                 # 測試資料
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
+<ol>
+<li>將您的 <code>Q.md</code> 和 <code>A.md</code> 文件放在同一個資料夾中</li>
+<li>在該資料夾中執行 <code>run.bat</code></li>
+<li>程式會自動處理並在 <code>output/</code> 資料夾中生成結果</li>
+</ol>
+<h3 id="方法二直接執行-python">方法二：直接執行 Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py &lt;工作目錄路徑&gt;
+</span></span></code></pre></div><p>例如：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_target/ditto-extract/">
+        <h2 class="post-title">
+            ditto-extract
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="ditto-剪貼簿提取工具">Ditto 剪貼簿提取工具</h1>
+<p>這是一個用於從 Ditto 剪貼簿管理軟體中提取和整理剪貼簿內容的 Python 工具。該工具可以將剪貼簿歷史記錄轉換為結構化的 Markdown 文件，並支援圖片內容的提取和處理。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_search/everything-bookmark-to-bat/">
+        <h2 class="post-title">
+            everything-bookmark-to-bat
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="everything-bookmark-to-bat-轉換工具">Everything Bookmark to BAT 轉換工具</h1>
+<p>這是一個將 Everything 搜尋引擎的書籤（Bookmarks）和過濾器（Filters）轉換為批次檔案（.bat）的 Python 工具。</p>
+<h2 id="功能說明">功能說明</h2>
+<ul>
+<li>從 Everything 的 Bookmarks.csv 和 Filters.csv 檔案中讀取搜尋條件</li>
+<li>將每個搜尋條件轉換為獨立的 .bat 檔案</li>
+<li>自動處理檔案名稱的合法化（移除非法字元、限制長度）</li>
+<li>處理搜尋字串中的特殊字元（如引號、管道符號）</li>
+<li>避免重複生成相同內容的檔案</li>
+</ul>
+<h2 id="檔案結構">檔案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                 # 主要程式檔案
+├── Bookmarks.csv         # Everything 書籤檔案
+├── Filters.csv           # Everything 過濾器檔案
+├── 00_output/            # 生成的 .bat 檔案輸出目錄
+├── 00_issue/             # 專案說明文件
+├── backup/               # 備份目錄
+└── pic/                  # 圖片資源
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="1-環境需求">1. 環境需求</h3>
+<ul>
+<li>Python 3.x</li>
+<li>Everything 搜尋引擎（安裝在 <code>C:\Program Files\Everything\</code>）</li>
+</ul>
+<h3 id="2-執行方式">2. 執行方式</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div><h3 id="3-程式功能">3. 程式功能</h3>
+<p>程式會執行以下操作：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_search/everything-sort-by-date-access/">
+        <h2 class="post-title">
+            everything-sort-by-date-access
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="everything-按存取日期排序搜尋工具">Everything 按存取日期排序搜尋工具</h1>
+<p>這是一個使用 Everything 搜尋工具來按檔案存取日期排序搜尋特定檔案的專案。</p>
+<h2 id="專案概述">專案概述</h2>
+<p>本專案提供了一個批次檔案腳本，使用 Everything 搜尋工具來搜尋指定路徑下的檔案，並按照存取日期進行排序。主要用於快速找到最近存取的應用程式檔案。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_search/frequeny-folder/">
+        <h2 class="post-title">
+            frequeny-folder
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="資料夾頻率分析工具-frequency-folder-analyzer">資料夾頻率分析工具 (Frequency Folder Analyzer)</h1>
+<h2 id="專案簡介">專案簡介</h2>
+<p>這是一個用於分析資料夾使用頻率的 Python 工具，主要用於統計和分析不同類型資料夾的出現頻率，並生成具有可點擊連結的 Markdown 報告。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📊 <strong>智能路徑分析</strong>：自動識別和分類不同類型的資料夾路徑</li>
+<li>🎯 <strong>分類統計</strong>：分別統計 CodeALL、ProjProj、Sidebar 三種類型的資料夾</li>
+<li>📝 <strong>Markdown 輸出</strong>：生成具有可點擊連結的 Markdown 格式報告</li>
+<li>🔍 <strong>路徑過濾</strong>：智能過濾無意義的資料夾名稱（如 output、projproj、dist 等）</li>
+<li>📏 <strong>路徑長度限制</strong>：根據不同類型設定最小路徑長度要求</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                                    # 主程式檔案
+├── issue.md                                  # 需求說明文件
+├── results-0222.md                          # 2月22日分析結果
+├── results-0224.md                          # 2月24日分析結果
+├── 00_version/                              # 版本歷史
+│   ├── v1_fequecy-ok.py                     # 第一版：基本頻率統計
+│   ├── v2.@1_filter-fail.py                 # 第二版：過濾功能（失敗版本）
+│   └── v2.0_different-keyword-filter-ok;wait-different-length-filter.py  # 第二版：成功版本
+├── pic/                                     # 圖片資源
+│   ├── image-20250222145329252.png
+│   └── image-20250222151322429.png
+└── src/                                     # 原始資料檔案
+    ├── 0216-0222.txt
+    ├── 0222.txt
+    ├── 0223-ori.txt
+    ├── 0223.txt
+    └── 0224.txt
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="基本使用">基本使用</h3>
+<ol>
+<li>將要分析的資料檔案放在 <code>src/</code> 資料夾中</li>
+<li>修改 <code>app.py</code> 中的檔案路徑：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_path <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;src/0224.txt&#34;</span>  <span style="color:#6272a4"># 更改為您的檔案名稱</span>
+</span></span></code></pre></div></li>
+<li>執行程式：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div></li>
+<li>查看生成的 <code>results.md</code> 檔案</li>
+</ol>
+<h3 id="分析規則">分析規則</h3>
+<p>程式會根據以下規則進行分析：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+</div>
+
+            
+
+
+<ul class="pager" data-pagefind-ignore="all">
+    
+    <li class="previous">
+        <a href="/page/3/">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page/5/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

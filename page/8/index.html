@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content="" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="http://localhost:1313/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+
+    <link rel="canonical" href="/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">路在脚下，心向远方</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+  
+<div data-pagefind-ignore="all" class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+<div data-pagefind-ignore="all">
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_exam---/exam-date-to-download-q@@flow/onenote-video-toc-to-url/">
+        <h2 class="post-title">
+            onenote-video-toc-to-url
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="onenote-影片目錄轉-url-工具">OneNote 影片目錄轉 URL 工具</h1>
+<p>這是一個 Python 工具，用於將 OneNote 影片目錄（Markdown 格式）轉換為資料夾結構和 URL 檔案，方便下載和管理影片資源。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📁 自動創建資料夾結構</li>
+<li>🔗 生成 .url 檔案，快速訪問影片連結</li>
+<li>🧹 自動清理不合法的資料夾名稱</li>
+<li>📝 支援 Markdown 格式的目錄檔案</li>
+<li>🎯 專門針對考試影片資源優化</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 作業系統（支援 .url 檔案）</li>
+</ul>
+<h2 id="安裝與使用">安裝與使用</h2>
+<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
+<ol>
+<li>將您的 Markdown 目錄檔案放在專案目錄中</li>
+<li>執行批次檔：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>go.bat your_toc_file.md
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="方法二直接使用-python">方法二：直接使用 Python</h3>
+<ol>
+<li>開啟命令提示字元或 PowerShell</li>
+<li>執行以下命令：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py your_toc_file.md
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="支援的目錄格式">支援的目錄格式</h2>
+<p>工具支援以下 Markdown 格式：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_video/pbf-to-lnk/">
+        <h2 class="post-title">
+            pbf-to-lnk
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="pbf-到-lnk-轉換器">PBF 到 LNK 轉換器</h1>
+<p>這是一個Python應用程序，用於處理視頻時間文件（.pbf格式）並自動創建視頻播放器的快捷方式，讓您可以快速跳轉到視頻的特定時間點。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_exam---/syncqq@@flow/post-office-lnk-group/">
+        <h2 class="post-title">
+            post-office-lnk-group
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="郵局連結群組管理工具-post-office-link-group-manager">郵局連結群組管理工具 (Post Office Link Group Manager)</h1>
+<p>這是一個用於管理和組織 Windows 捷徑檔案的 Python 工具，特別適用於整理考試資料、學習資源和各種文件連結。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔗 <strong>自動建立捷徑</strong>: 從路徑清單自動建立 Windows .lnk 捷徑檔案</li>
+<li>📁 <strong>智能分類</strong>: 自動為每個捷徑建立編號前綴和對應資料夾</li>
+<li>📊 <strong>HTML 報表</strong>: 生成包含所有連結的 HTML 表格報表</li>
+<li>🗂️ <strong>多種輸出格式</strong>: 支援不同主題和分類的輸出目錄</li>
+<li>📝 <strong>詳細日誌</strong>: 完整的錯誤記錄和處理狀態追蹤</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                    # 主要程式檔案
+├── path.txt                  # 路徑清單檔案
+├── requirements.txt          # Python 依賴套件
+├── alllnk/                   # 原始連結檔案
+├── output/                   # 預設輸出目錄
+├── output-chinese/           # 中文內容輸出
+├── output-network/           # 網路相關輸出
+├── output-post/              # 郵局相關輸出
+├── output-postoffice/        # 郵局考試輸出
+├── output-program-normal/    # 程式設計一般輸出
+├── output-taipower/          # 台電相關輸出
+├── output-ttt/               # TTT 相關輸出
+├── output-twport/            # 台灣港務輸出
+├── output-v1/                # 版本 1 輸出
+└── 00_version/               # 版本歷史檔案
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Windows 作業系統</li>
+<li>Python 3.6 或更高版本</li>
+</ul>
+<h3 id="依賴套件">依賴套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div><p>主要依賴：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_code/puml-to-jpg/">
+        <h2 class="post-title">
+            puml-to-jpg
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="plantuml-轉-jpg-轉換器">PlantUML 轉 JPG 轉換器</h1>
+<p>這個 Python 腳本可以將 target 資料夾中的所有 PlantUML (.puml) 檔案轉換為 JPG 圖片格式。</p>
+<h2 id="安裝依賴">安裝依賴</h2>
+<p>首先安裝必要的 Python 套件：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div><p>或者手動安裝：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install <span style="color:#8be9fd;font-style:italic">plantuml</span><span style="color:#ff79c6">==</span>0.3.0 <span style="color:#8be9fd;font-style:italic">Pillow</span><span style="color:#ff79c6">==</span>10.0.0
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<ol>
+<li>確保您的 PlantUML 檔案都放在 <code>target</code> 資料夾中</li>
+<li>執行腳本：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div><h2 id="功能特點">功能特點</h2>
+<ul>
+<li>🔍 自動掃描 target 資料夾中的所有 .puml 檔案</li>
+<li>🖼️ 將 PlantUML 圖表轉換為高品質 JPG 圖片</li>
+<li>📁 自動創建 output 資料夾存放轉換後的圖片</li>
+<li>🎨 處理透明背景，轉換為白色背景</li>
+<li>📊 顯示轉換進度和結果統計</li>
+</ul>
+<h2 id="輸出">輸出</h2>
+<p>轉換後的 JPG 檔案將保存在 <code>output</code> 資料夾中，檔案名稱與原始 .puml 檔案相同，但副檔名為 .jpg。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="http://localhost:1313/post/code/python/00_search/record-what-recent-care-project/">
+        <h2 class="post-title">
+            record-what-recent-care-project
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="專案記錄工具-record-what-recent-care-project">專案記錄工具 (Record What Recent Care Project)</h1>
+<p>這是一個用於記錄最近關注專案資料夾的 Python 工具，可以自動建立捷徑檔案並按月份組織，方便追蹤最近的工作進度。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📁 記錄最近關注的專案資料夾路徑</li>
+<li>📅 按日期時間自動分類到對應月份資料夾</li>
+<li>🔗 自動建立 Windows 捷徑檔案 (.lnk)</li>
+<li>📝 將記錄保存到 Markdown 檔案中</li>
+<li>🗂️ 自動建立年/月資料夾結構</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py              # 主要 Python 程式
+├── go.bat              # 批次執行檔案
+├── project_records.md  # 專案記錄檔案
+├── issue.markdown      # 專案說明文件
+├── output/             # 輸出資料夾
+│   └── 2025/
+│       ├── 02/         # 按月份分類的捷徑檔案
+│       ├── 03/
+│       └── 05/
+└── pic/                # 專案截圖
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Windows 作業系統</li>
+<li>Python 3.x</li>
+</ul>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pywin32
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一透過-sendto-功能推薦">方法一：透過 SendTo 功能（推薦）</h3>
+<ol>
+<li>
+<p>將 <code>go.bat</code> 檔案複製到 Windows SendTo 資料夾：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+</div>
+
+            
+
+
+<ul class="pager" data-pagefind-ignore="all">
+    
+    <li class="previous">
+        <a href="/page/7/">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page/9/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:youremail@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/yourgithub">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/code" title="code">
+                        code
+                    </a>
+               
+            
+               
+                    <a href="/tags/ebook" title="ebook">
+                        ebook
+                    </a>
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/mail" title="mail">
+                        mail
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/money" title="money">
+                        money
+                    </a>
+               
+            
+               
+                    <a href="/tags/search" title="search">
+                        search
+                    </a>
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+                    <a href="/tags/target" title="target">
+                        target
+                    </a>
+               
+            
+               
+                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
+                        tmp-not-organize
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
+                        ui-user-feedback
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/video" title="video">
+                        video
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/diary/d21_02_ship-boat-ticket-information/">ship-boat-ticket-information</a></li>
+        
+            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:youremail@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

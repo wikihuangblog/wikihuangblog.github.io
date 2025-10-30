@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on wikihuang Blog</title>
+    <link>http://localhost:1313/tags/backup/</link>
+    <description>Recent content in Backup on wikihuang Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sync-diff-disk</title>
+      <link>http://localhost:1313/post/code/python/00_backup/sync-diff-disk/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/code/python/00_backup/sync-diff-disk/</guid>
+      <description>&lt;h1 id=&#34;磁碟同步差異工具-sync-diff-disk&#34;&gt;磁碟同步差異工具 (Sync Diff Disk)&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於比較和同步不同磁碟間資料夾結構的 Python 工具。它可以分析兩個目錄的結構差異，並建議或執行檔案/資料夾的移動操作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔍 &lt;strong&gt;結構比較&lt;/strong&gt;: 比較兩個目錄的資料夾結構&lt;/li&gt;&#xA;&lt;li&gt;📁 &lt;strong&gt;智能移動&lt;/strong&gt;: 自動建議需要移動的資料夾&lt;/li&gt;&#xA;&lt;li&gt;🛡️ &lt;strong&gt;安全操作&lt;/strong&gt;: 避免覆蓋現有檔案，自動添加編號後綴&lt;/li&gt;&#xA;&lt;li&gt;📝 &lt;strong&gt;詳細日誌&lt;/strong&gt;: 提供完整的操作日誌記錄&lt;/li&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;深度控制&lt;/strong&gt;: 可設定掃描深度，避免過度遍歷&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;系統需求&#34;&gt;系統需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 3.6 或更高版本&lt;/li&gt;&#xA;&lt;li&gt;Windows 作業系統（支援 Windows 路徑格式）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝與使用&#34;&gt;安裝與使用&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-下載專案&#34;&gt;1. 下載專案&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone &amp;lt;repository-url&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; sync-diff-disk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-執行應用程式&#34;&gt;2. 執行應用程式&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-配置路徑&#34;&gt;3. 配置路徑&lt;/h3&gt;&#xA;&lt;p&gt;在 &lt;code&gt;app.py&lt;/code&gt; 檔案中修改以下變數：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
