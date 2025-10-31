@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
     
 
     <meta property="og:url" content="https://wikihuangblog.github.io/" />
@@ -34,10 +34,10 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="wikihuang,blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>wikihuang Blog | wikihuang的博客 | wikihuang Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -110,8 +110,6 @@
 		    
                         <li><a href="/archive//">ARCHIVE</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
-                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -162,7 +160,7 @@
                 <div class="site-heading">
                     <h1>wikihuang Blog </h1>
                     
-		    <span class="subheading">路在脚下，心向远方</span>
+		    <span class="subheading">todo-done-as-target</span>
                 </div>
             </div>
         </div>
@@ -187,39 +185,39 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/syncqq@@flow/html-to-md-nextqq-split/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/pdf-mindmap-@@flow/split-horizontal-pdf-into-vertial-pdf/">
         <h2 class="post-title">
-            html-to-md-nextQQ-split
+            split-horizontal-pdf-into-vertial-pdf
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="html-轉-markdown-工具">HTML 轉 Markdown 工具</h1>
-<p>這是一個專門用於將 HTML 內容轉換為 Markdown 格式的 Python 工具，特別針對豆包（Doubao）聊天記錄進行優化處理。</p>
+            <h1 id="pdf-水平分割工具">PDF 水平分割工具</h1>
+<p>這是一個用於將水平 PDF 文件分割成垂直 PDF 文件的 Python 工具。該工具可以將每個 PDF 頁面從中間水平分割，將原本的橫向頁面轉換為兩個縱向頁面。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li><strong>HTML 到 Markdown 轉換</strong>：使用 BeautifulSoup 和 html2text 庫進行高品質轉換</li>
-<li><strong>智能內容處理</strong>：自動識別並處理「下一題」等關鍵詞，將其轉換為標題格式</li>
-<li><strong>格式清理</strong>：移除不必要的 HTML 標籤和樣式，保持內容簡潔</li>
-<li><strong>中文支援</strong>：完整支援繁體中文和簡體中文內容</li>
-<li><strong>代碼塊處理</strong>：特別優化代碼標籤的處理，確保代碼格式正確</li>
+<li>🔄 自動將水平 PDF 分割成垂直 PDF</li>
+<li>📁 批量處理目標文件夾中的所有 PDF 文件</li>
+<li>🛡️ 錯誤處理機制，確保程序穩定性</li>
+<li>📦 使用 PyMuPDF (fitz) 庫，提供高質量的 PDF 處理</li>
 </ul>
-<h2 id="專案結構">專案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                          # 主程式文件
-├── input.html                      # 輸入的 HTML 文件
-├── output.md                       # 輸出的 Markdown 文件
-├── README.md                       # 專案說明文件
-├── 00_different-input/             # 不同輸入範例
-│   ├── decimal-to-multi-base/      # 十進制轉多進制範例
-│   └── 程序算法小考官---.doubao.html
-├── 00_version/                     # 版本歷史
-│   ├── v1.py                       # 第一版（空文件）
-│   ├── v2_newQ-translate.py        # 第二版（空文件）
-│   └── v3_newQ-as-h3-ok.py        # 第三版（完整功能）
-└── split_sections/                 # 分割後的章節文件
-</code></pre><h2 id="安裝需求">安裝需求</h2>
-<p>確保您的系統已安裝以下 Python 套件：</p>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>PyMuPDF 庫</li>
+</ul>
+<h2 id="安裝依賴">安裝依賴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install PyMuPDF
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批處理文件推薦">方法一：使用批處理文件（推薦）</h3>
+<ol>
+<li>將要處理的 PDF 文件放入 <code>target</code> 文件夾</li>
+<li>雙擊運行 <code>run.bat</code> 文件</li>
+<li>處理完成的文件將保存在 <code>target/split_pdfs/</code> 文件夾中</li>
+</ol>
+<h3 id="方法二直接運行-python-腳本">方法二：直接運行 Python 腳本</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py <span style="color:#ff79c6">[</span>目標文件夾路徑<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>例如：</p>
        
         </div>
     </a>
@@ -235,124 +233,111 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/pdf-mindmap-@@flow/html-to-md-to-pdf/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/00_stastic/statistic-move-combine-with-yaml/">
         <h2 class="post-title">
-            html-to-md-to-pdf
+            statistic-move-combine-with-yaml
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="html-轉-pdfmarkdown-轉換工具">HTML 轉 PDF/Markdown 轉換工具</h1>
-<p>這是一個 Python 工具，可以將 HTML 檔案批量轉換為 PDF 和 Markdown 格式。</p>
-<h2 id="功能特色">功能特色</h2>
+            <h1 id="統計移動合併工具-statistic-move-combine-tool">統計移動合併工具 (Statistic Move Combine Tool)</h1>
+<p>這是一個用於自動化文件移動和合併的 Python 工具，可以根據數字前綴匹配源目錄和目標目錄，並將文件從源目錄移動到對應的目標目錄。</p>
+<h2 id="功能特點">功能特點</h2>
 <ul>
-<li>🔄 批量轉換 HTML 檔案為 PDF 和 Markdown 格式</li>
-<li>📁 支援目錄結構處理（最多處理 2 層子目錄）</li>
-<li>🎨 自定義 CSS 樣式，優化 PDF 輸出格式</li>
-<li>📄 支援 B5 頁面大小，最小邊距設定</li>
-<li>🚀 簡單易用的批次執行腳本</li>
+<li>🔍 <strong>智能匹配</strong>: 根據目錄名稱中的數字前綴自動匹配源目錄和目標目錄</li>
+<li>📁 <strong>遞歸處理</strong>: 支持多層目錄結構的遞歸處理</li>
+<li>🚀 <strong>自動移動</strong>: 自動將匹配的文件和目錄從源位置移動到目標位置</li>
+<li>📝 <strong>詳細日誌</strong>: 提供詳細的操作日誌，顯示每個移動操作</li>
 </ul>
-<h2 id="系統需求">系統需求</h2>
-<h3 id="python-套件">Python 套件</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pdfkit html2text weasyprint markdown
-</span></span></code></pre></div><h3 id="外部工具">外部工具</h3>
+<h2 id="系統要求">系統要求</h2>
 <ul>
-<li><strong>wkhtmltopdf</strong>: 用於 HTML 轉 PDF 轉換
-<ul>
-<li>下載地址: <a href="https://wkhtmltopdf.org/downloads.html">https://wkhtmltopdf.org/downloads.html</a></li>
-<li>預設安裝路徑: <code>C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe</code></li>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 操作系統（路徑配置為 Windows 格式）</li>
 </ul>
-</li>
+<h2 id="安裝">安裝</h2>
+<ol>
+<li>克隆或下載此項目到本地</li>
+<li>確保已安裝 Python 3.6+</li>
+</ol>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="配置路徑">配置路徑</h3>
+<p>在運行腳本之前，請修改 <code>app.py</code> 中的路徑配置：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/00_stastic/statistic-q-to-yamol/">
+        <h2 class="post-title">
+            statistic-q-to-yamol
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="統計學題目整理工具">統計學題目整理工具</h1>
+<p>這是一個用於整理統計學題目的 Python 工具，可以自動將 HTML 文件移動到對應的資料夾中。</p>
+<h2 id="功能說明">功能說明</h2>
+<p>此工具會掃描當前目錄中的所有 HTML 文件，並根據文件名稱的前綴數字，將文件移動到對應的資料夾中。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/toggle-edge-pic-window-for-listen-q/">
+        <h2 class="post-title">
+            toggle-edge-pic-window-for-listen-Q
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="視窗切換工具-window-switch-tool">視窗切換工具 (Window Switch Tool)</h1>
+<p>這是一個使用 AutoHotkey 腳本開發的視窗切換工具，可以快速在不同視窗之間切換並執行特定操作。</p>
+<h2 id="功能說明">功能說明</h2>
+<ul>
+<li><strong>快速視窗切換</strong>: 按下 F3 鍵即可快速切換視窗</li>
+<li><strong>自動化操作</strong>: 切換視窗後自動執行 F1 鍵操作</li>
+<li><strong>延遲控制</strong>: 內建適當的延遲時間確保操作穩定性</li>
 </ul>
 <h2 id="檔案結構">檔案結構</h2>
 <pre tabindex="0"><code>app/
-├── app.py          # 主要轉換程式（使用 pdfkit）
-├── app2md.py       # 替代轉換程式（使用 weasyprint）
-├── custom.css      # 自定義 CSS 樣式檔案
-├── run.bat         # Windows 批次執行腳本
-├── issue.txt       # 專案說明
-├── target/         # HTML 檔案輸入目錄
-├── target---1/     # 備用輸入目錄
-├── target-ori/     # 原始檔案目錄
-└── output_pdf/     # 輸出目錄（自動建立）
+├── switch-window.ahk          # 主要的 AutoHotkey 腳本檔案
+├── 00_version/               # 版本控制目錄
+│   └── app___original___.lnk # 原始應用程式連結
+└── README.md                 # 說明文件
 </code></pre><h2 id="使用方法">使用方法</h2>
-<h3 id="方法一使用批次腳本推薦">方法一：使用批次腳本（推薦）</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 在 Windows 上直接執行</span>
-</span></span><span style="display:flex;"><span>run.bat
-</span></span></code></pre></div><h3 id="方法二直接執行-python-程式">方法二：直接執行 Python 程式</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 使用 app.py（pdfkit 版本）</span>
-</span></span><span style="display:flex;"><span>python app.py target
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#6272a4"># 使用 app2md.py（weasyprint 版本）</span>
-</span></span><span style="display:flex;"><span>python app2md.py
-</span></span></code></pre></div><h2 id="程式說明">程式說明</h2>
-<h3 id="apppy">app.py</h3>
-<ul>
-<li>使用 <code>pdfkit</code> 和 <code>wkhtmltopdf</code> 進行轉換</li>
-<li>支援自定義 CSS 樣式</li>
-<li>設定 B5 頁面大小，最小邊距</li>
-<li>同時產生 PDF 和 Markdown 檔案</li>
-</ul>
-<h3 id="app2mdpy">app2md.py</h3>
-<ul>
-<li>使用 <code>weasyprint</code> 進行轉換</li>
-<li>先將 HTML 轉為 Markdown，再轉為 PDF</li>
-<li>支援 A4 頁面大小</li>
-<li>內建 CSS 樣式</li>
-</ul>
-<h2 id="輸出設定">輸出設定</h2>
-<h3 id="pdf-設定">PDF 設定</h3>
-<ul>
-<li><strong>頁面大小</strong>: B5 (app.py) / A4 (app2md.py)</li>
-<li><strong>邊距</strong>: 最小邊距設定</li>
-<li><strong>字體</strong>: 自動換行，優化排版</li>
-<li><strong>縮放</strong>: 可調整縮放比例</li>
-</ul>
-<h3 id="markdown-設定">Markdown 設定</h3>
-<ul>
-<li>保留連結和圖片</li>
-<li>保留文字格式</li>
-<li>UTF-8 編碼</li>
-</ul>
-<h2 id="目錄處理">目錄處理</h2>
-<p>程式會自動處理以下目錄結構：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_video/linkedin-topic-move-same-name-into-folder_trim-prefix-suffix/">
-        <h2 class="post-title">
-            linkedin-topic-move-same-name-into-folder_trim-prefix-suffix
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="linkedin-主題檔案整理工具">LinkedIn 主題檔案整理工具</h1>
-<p>這是一個用於自動整理 LinkedIn 相關檔案的 Python 工具，可以根據檔案名稱的前綴和後綴來分組並移動檔案到對應的資料夾中。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>🔄 自動識別檔案名稱的前綴（數字_）和後綴（_@@、.lnk、.jpg、.zip 等）</li>
-<li>📁 根據核心檔案名稱自動分組檔案</li>
-<li>🚀 將相同主題的檔案移動到對應的資料夾中</li>
-<li>🛡️ 支援多種檔案格式（.jpg、.lnk、.zip、.html、.srt）</li>
-<li>⚡ 提供批次執行腳本</li>
-</ul>
-<h2 id="檔案說明">檔案說明</h2>
-<h3 id="主要腳本">主要腳本</h3>
+<h3 id="前置需求">前置需求</h3>
 <ol>
-<li>
-<p><strong><code>linkedin-topic-move-same-name-into-folder_trim-prefix-suffix.py</code></strong></p>
+<li>安裝 <a href="https://www.autohotkey.com/">AutoHotkey</a> 軟體</li>
+<li>確保系統已安裝並可正常運行 AutoHotkey</li>
+</ol>
+<h3 id="執行步驟">執行步驟</h3>
+<ol>
+<li>下載或複製 <code>switch-window.ahk</code> 檔案</li>
+<li>雙擊執行該檔案，或右鍵選擇「Compile Script」編譯為 .exe 檔案</li>
+<li>腳本執行後，按下 <strong>F3</strong> 鍵即可觸發視窗切換功能</li>
+</ol>
+<h3 id="操作流程">操作流程</h3>
+<p>當按下 F3 鍵時，腳本會執行以下操作：</p>
        
         </div>
     </a>
@@ -368,65 +353,41 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_video/lnk-target-folder-find-markdown/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/txt-to-multi-column-pic/">
         <h2 class="post-title">
-            lnk-target-folder-find-markdown
+            txt-to-multi-column-pic
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="lnk-目標資料夾-markdown-檔案查找工具">LNK 目標資料夾 Markdown 檔案查找工具</h1>
-<p>這是一個用於處理 Windows 快捷方式（.lnk）檔案的 Python 工具，能夠自動查找快捷方式指向的資料夾中的 Markdown 檔案，並更新快捷方式的目標路徑。</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/ch09_eng/local-fetch-server-for-eng-translate/">
-        <h2 class="post-title">
-            local-fetch-server-for-eng-translate
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="本地翻譯伺服器-local-translation-server">本地翻譯伺服器 (Local Translation Server)</h1>
-<p>這是一個基於 Flask 的本地翻譯伺服器，專門為 Tampermonkey 腳本提供英文到繁體中文的翻譯服務。主要用於 JanitorAI 聊天頁面的即時翻譯功能。</p>
+            <h1 id="文字轉多欄圖片工具">文字轉多欄圖片工具</h1>
+<p>這是一個將文字檔案轉換為多欄格式圖片的 Python 工具，特別適用於將長文字內容以視覺化的方式呈現。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li>🌐 <strong>本地翻譯服務</strong>：使用 Google Translate API 提供翻譯服務</li>
-<li>🔄 <strong>批量句子翻譯</strong>：支援多句子同時翻譯，使用 <code>|||</code> 分隔符</li>
-<li>🎯 <strong>中英對照顯示</strong>：翻譯結果以中英對照格式呈現</li>
-<li>⌨️ <strong>快捷鍵操作</strong>：支援 F8 快捷鍵觸發翻譯</li>
-<li>🚀 <strong>CORS 支援</strong>：允許跨域請求，配合 Tampermonkey 腳本使用</li>
+<li>將文字檔案內容轉換為多欄格式的圖片</li>
+<li>支援中文字體顯示</li>
+<li>跨平台字體支援（Windows、macOS、Linux）</li>
+<li>可自訂欄數、圖片高度和字體大小</li>
+<li>自動調整行間距和邊距</li>
 </ul>
-<h2 id="專案結構">專案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                                    # 主要翻譯伺服器 (支援句子分割)
-├── Virtuoso Final List Item Translate...js  # Tampermonkey 腳本
-├── 00_version---py/                          # Python 版本歷史
-│   ├── v1_only-single-string;wait-split-multi/
-│   └── v2_long-string-to-split.py
-├── 00_version--js/                           # JavaScript 版本歷史
-│   ├── translate-final-section/
-│   ├── translate-v2/
-│   └── translate-v3/
-└── 00_readme/                               # 說明文件
-</code></pre><h2 id="安裝與設定">安裝與設定</h2>
-<h3 id="1-安裝-python-依賴">1. 安裝 Python 依賴</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install flask <span style="color:#8be9fd;font-style:italic">googletrans</span><span style="color:#ff79c6">==</span>4.0.0-rc1 flask-cors
-</span></span></code></pre></div><h3 id="2-啟動翻譯伺服器">2. 啟動翻譯伺服器</h3>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6+</li>
+<li>Pillow (PIL) 套件</li>
+</ul>
+<h2 id="安裝依賴">安裝依賴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install Pillow
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<ol>
+<li>將要轉換的文字內容放入 <code>combined_titles.txt</code> 檔案中</li>
+<li>執行主程式：</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div><p>伺服器將在 <code>http://localhost:5008</code> 啟動</p>
+</span></span></code></pre></div><ol start="3">
+<li>程式會自動生成 <code>!!output.jpg</code> 圖片檔案</li>
+</ol>
+<h2 id="程式參數">程式參數</h2>
+<p>在 <code>app.py</code> 中可以調整以下參數：</p>
        
         </div>
     </a>
@@ -481,67 +442,22 @@
             </a>
             
             
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+                <p>Software Developer</p>
             
            
            <ul class="list-inline">
                
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
                
                
                
                
                
                
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
                
                
                
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
             
             
                
@@ -569,27 +485,9 @@
                
             
                
-                    <a href="/tags/code" title="code">
-                        code
-                    </a>
-               
             
                
-                    <a href="/tags/ebook" title="ebook">
-                        ebook
-                    </a>
-               
             
-               
-                    <a href="/tags/eool" title="eool">
-                        eool
-                    </a>
-               
-            
-               
-                    <a href="/tags/essay" title="essay">
-                        essay
-                    </a>
                
             
                
@@ -601,47 +499,13 @@
                
             
                
-                    <a href="/tags/mail" title="mail">
-                        mail
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/money" title="money">
-                        money
-                    </a>
-               
-            
-               
-                    <a href="/tags/search" title="search">
-                        search
-                    </a>
-               
-            
-               
                     <a href="/tags/stastic" title="stastic">
                         stastic
                     </a>
                
             
                
-                    <a href="/tags/target" title="target">
-                        target
-                    </a>
-               
             
-               
-                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
-                        tmp-not-organize
-                    </a>
-               
-            
-               
-                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
-                        ui-user-feedback
-                    </a>
                
             
                
@@ -653,9 +517,9 @@
                
             
                
-                    <a href="/tags/video" title="video">
-                        video
-                    </a>
+            
+               
+            
                
             
                
@@ -666,16 +530,6 @@
 
     
     
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
-    
     
     
     <section>
@@ -683,15 +537,15 @@
         <h5>LAST POSTS</h5>
         <ul>
         
-            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
-            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
         
         </ul>
     </section>
@@ -711,15 +565,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
@@ -727,47 +572,11 @@
 
 		            
                     
-                    <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/yourgithub">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
                     
                     
                     
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                     
                     

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="first note blog" />
+    <meta property="og:title" content="first note blog" />
+    <meta property="twitter:title" content="first note blog" />
+    
+
+    
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="https://wikihuangblog.github.io/post/00_maintarget/2016/00_maintarget/target/octopress-blog/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="wikihuang,blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>first note blog | wikihuang的博客 | wikihuang Blog</title>
+
+    <link rel="canonical" href="/post/00_maintarget/2016/00_maintarget/target/octopress-blog/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">todo-done-as-target</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="first-note-blog">first note blog</h1>
+<p><a href="https://wikihuang.github.io/">https://wikihuang.github.io/</a></p>
+<p>這是第一篇關於筆記網誌的記錄，當時完成的這個版本的網誌，就是你一直希望能實現的 —— 把每次寫的文章順利接軌上傳的功能。當然，那個時候的網誌主要用來存放一些精心整理過的筆記。只不過，每一篇文章都要花很多時間做精細的整理，所以雖然文章完成後正確性很高，但時間消耗實在太久了。</p>
+<p>其實筆記這類東西，本來就需要比較隨性地記錄，就算有錯字，也要快速寫下來，這樣才能達到每天記錄的目的。而當時做的那個網誌版本，有一個功能是記錄你每年做了什麼，比如每年有哪些文章寫得比較仔細、可以公開給別人看。它的主要特色是按年份呈現已完成的內容，旁邊還會有目錄關鍵字，透過這些就能很清楚地看到每類文章的數量、對應的關鍵字數量等等。</p>
+<p>不過這個專案，在那之後又隔了很多年才有辦法繼續推進，畢竟當時筆記的書寫速度不快，沒辦法頻繁地更新內容。直到後來 AI 技術興起，加上語音輸入變得越來越自然，才終於有機會重新恢復這種記錄生活的方式 —— 不僅能很隨性地記錄每天的筆記、做好筆記管理，還能同步列出待辦事項，讓寫日記、記筆記重新成為日常。</p>
+<p>
+  <img src="pic/image-20251031100846736.png" alt="image-20251031100846736">
+
+</p>
+<h1 id="2017">2017&ndash;</h1>
+<h2 id="knife-defense-on-the-ground"><a href="https://wikihuang.github.io/blog/2017/10/02/Knife-Defense-on-the-Ground/">Knife-Defense-on-the-Ground</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/streetfight/">streetfight</a></p>
+<h2 id="how-to-get-out-headlock"><a href="https://wikihuang.github.io/blog/2017/10/01/How-to-Get-Out-Headlock/">How-to-Get-Out-Headlock</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/streetfight/">streetfight</a></p>
+<h2 id="top-3-choke-escapes-for-self-defense"><a href="https://wikihuang.github.io/blog/2017/09/30/Top-3-Choke-Escapes-for-Self-Defense/">Top-3-Choke-Escapes-for-Self-Defense</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/self-defense/">self-defense</a></p>
+<h2 id="01_"><a href="https://wikihuang.github.io/blog/2017/09/12/0.1_Welcome/">0.1_Welcome</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/test-driven-development-in-php-with-phpunit/">test-driven-development-in-php-with-phpunit</a></p>
+<h2 id="32_"><a href="https://wikihuang.github.io/blog/2017/09/08/3.2_Creating-components-with-createClass()/">3.2_Creating-components-with-createClass()</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/react-dot-js-essential-training/">react.js-essential-training</a></p>
+<h2 id="33_"><a href="https://wikihuang.github.io/blog/2017/09/08/3.3_Adding-component-properties/">3.3_Adding-component-properties</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/react-dot-js-essential-training/">react.js-essential-training</a></p>
+<h2 id="welcome-to-jekyll"><a href="https://wikihuang.github.io/blog/2017/06/03/welcome-to-jekyll/">Welcome to Jekyll!</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jekyll/">jekyll</a>, <a href="https://wikihuang.github.io/blog/categories/update/">update</a></p>
+<h2 id="25_"><a href="https://wikihuang.github.io/blog/2017/05/24/2.5_Building-with-webpack/">2.5_building With Webpack</a></h2>
+<p>ordinal</p>
+<h1 id="2016">2016&ndash;</h1>
+<h2 id="單句反覆功能-找出英文不懂的句子"><a href="https://wikihuang.github.io/blog/2016/10/08/voiceTube-repeat/">單句反覆功能-找出英文不懂的句子</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/e-learning/">e-learning</a></p>
+<h2 id="outlook的rss功能-管理youtube教學影片"><a href="https://wikihuang.github.io/blog/2016/10/08/rss-outlook/">Outlook的RSS功能-管理youtube教學影片</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/e-learning/">e-learning</a></p>
+<h2 id="tts真人語音-念電子書給你聽"><a href="https://wikihuang.github.io/blog/2016/09/30/tts/">TTS真人語音-念電子書給你聽</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/desktop-app/">desktop-app</a></p>
+<h2 id="touchcursor自訂方向鍵"><a href="https://wikihuang.github.io/blog/2016/09/30/touchcursor/">Touchcursor自訂方向鍵</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/desktop-app/">desktop-app</a></p>
+<h2 id="替影片做筆記-potplayer"><a href="https://wikihuang.github.io/blog/2016/09/30/potplayer-note/">替影片做筆記-potplayer</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/desktop-app/">desktop-app</a></p>
+<h2 id="dexpot虛擬多個桌面"><a href="https://wikihuang.github.io/blog/2016/09/30/dexpot/">Dexpot虛擬多個桌面</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/desktop-app/">desktop-app</a></p>
+<h2 id="網頁畫重點-wired-marker"><a href="https://wikihuang.github.io/blog/2016/09/24/wiredmarker-toeic/">網頁畫重點-Wired-Marker!</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/browser-plugin/">browser-plugin</a></p>
+<h2 id="greasemonkey自訂護眼網頁背景"><a href="https://wikihuang.github.io/blog/2016/09/24/gmonkey/">Greasemonkey自訂護眼網頁背景</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/browser-plugin/">browser-plugin</a></p>
+<h2 id="38_"><a href="https://wikihuang.github.io/blog/2016/09/12/15.Prototypal-Inheritance-and-Refactoring-the-Slider/">3.8_圖片輪撥Slider_物件導向</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="37_"><a href="https://wikihuang.github.io/blog/2016/09/12/14.The-Obligatory-Slider/">3.7_圖片輪撥Slider</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="36_"><a href="https://wikihuang.github.io/blog/2016/09/12/13.Homework-Solution/">3.6_淡出和滑動特效</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="35_"><a href="https://wikihuang.github.io/blog/2016/09/12/12.Full-Control-With-The-Animate-Method/">3.5_控制動畫效果</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="34_"><a href="https://wikihuang.github.io/blog/2016/09/12/11.Creating-Custom-Effect-Methods/">3.4_產生自製特效</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="33_-1"><a href="https://wikihuang.github.io/blog/2016/09/12/10.Modifying-Effect-Speeds/">3.3_自訂特效速度</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="32_-1"><a href="https://wikihuang.github.io/blog/2016/09/12/09.The-this-keyword/">3.2_this的應用</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="31_"><a href="https://wikihuang.github.io/blog/2016/09/12/08.Effects-and-Structure/">3.1_表單特效和程式架構</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="27_"><a href="https://wikihuang.github.io/blog/2016/09/12/07.Creating-and-Appending-Content-to-DOM/">2.7_產生新的DOM元素插入至已存在的DOM結構內</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="26_"><a href="https://wikihuang.github.io/blog/2016/09/12/06.Bind-Live-Delegate-Huh/">2.6_Bind、Live、Delegate事件觸發的不同</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="25_-1"><a href="https://wikihuang.github.io/blog/2016/09/12/05.Events-201/">2.5_Toggle事件與特效應用</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="24_"><a href="https://wikihuang.github.io/blog/2016/09/12/04.Events-101/">2.4_點選事件(click)應用</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="23_"><a href="https://wikihuang.github.io/blog/2016/09/12/03-The-Basics-of-Querying-the-Dom/">2.3_基本的DOM元素選取法</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="22_"><a href="https://wikihuang.github.io/blog/2016/09/12/02-Not-So-Fast/">2.2_不是這麼快</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="21_"><a href="https://wikihuang.github.io/blog/2016/09/12/01-Hello-jQuery/">2.1_哈囉，jQuery</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/jquery-30day/">jquery-30day</a></p>
+<h2 id="降低螢幕亮度-讓閱讀更舒適"><a href="https://wikihuang.github.io/blog/2016/08/17/monitor-adjust/">降低螢幕亮度-讓閱讀更舒適</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/release/">release</a></p>
+<h2 id="提昇工作效率-先找張能放鬆的椅子"><a href="https://wikihuang.github.io/blog/2016/08/17/chair/">提昇工作效率-先找張能放鬆的椅子</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/release/">release</a></p>
+<h2 id="31_-1"><a href="https://wikihuang.github.io/blog/2016/04/30/3.1_Planning-an-ActivityCounter/">3.1_Planning-an-ActivityCounter</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/cat/">cat</a></p>
+<h2 id="i-am-title"><a href="https://wikihuang.github.io/blog/2016/04/30/2.1_Jekyll-and-YAML/">I Am Title</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/cat/">cat</a></p>
+<h2 id="11_"><a href="https://wikihuang.github.io/blog/2016/04/30/1.1_installing/">1.1_installing</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/cat/">cat</a></p>
+<h2 id="07_"><a href="https://wikihuang.github.io/blog/2016/04/30/07_style-the-form-elements/">07_表單樣式</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="06_"><a href="https://wikihuang.github.io/blog/2016/04/30/06_build--the-tabbing-system-with-javascript/">06_頁籤切換頁面</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="05d_"><a href="https://wikihuang.github.io/blog/2016/04/30/05d_buildCss_footer_section/">05d_footer</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="05c_"><a href="https://wikihuang.github.io/blog/2016/04/30/05c_buildCss_main_section/">05c_main</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="05b_"><a href="https://wikihuang.github.io/blog/2016/04/30/05b_buildCss_banner_section/">05b_banner</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="05a_"><a href="https://wikihuang.github.io/blog/2016/04/30/05a_buildCss_header_section/">05a_建構header區塊的css</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="04_"><a href="https://wikihuang.github.io/blog/2016/04/30/04_Integrate-the-960-Grid-System/">04_960gs</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="03_"><a href="https://wikihuang.github.io/blog/2016/04/30/03_Slice-the-PSD/">03_裁切psd圖檔</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+<h2 id="02_"><a href="https://wikihuang.github.io/blog/2016/04/30/02_Create-the-Markup/">02_產生markup</a></h2>
+<p>ordinal  <a href="https://wikihuang.github.io/blog/categories/psd-to-html/">psd-to-html</a></p>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/wikihuangblog.github.io\/post\/00_maintarget\/2016\/00_maintarget\/target\/octopress-blog\/',
+        pageTitle: 'first note blog',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer</p>
+            
+           
+           <ul class="list-inline">
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

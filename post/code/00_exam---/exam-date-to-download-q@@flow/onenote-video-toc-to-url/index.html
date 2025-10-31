@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="onenote-video-toc-to-url" />
+    <meta property="og:title" content="onenote-video-toc-to-url" />
+    <meta property="twitter:title" content="onenote-video-toc-to-url" />
+    
+
+    
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="https://wikihuangblog.github.io/post/code/00_exam---/exam-date-to-download-q@@flow/onenote-video-toc-to-url/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="wikihuang,blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>onenote-video-toc-to-url | wikihuang的博客 | wikihuang Blog</title>
+
+    <link rel="canonical" href="/post/code/00_exam---/exam-date-to-download-q@@flow/onenote-video-toc-to-url/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">todo-done-as-target</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="onenote-影片目錄轉-url-工具">OneNote 影片目錄轉 URL 工具</h1>
+<p>這是一個 Python 工具，用於將 OneNote 影片目錄（Markdown 格式）轉換為資料夾結構和 URL 檔案，方便下載和管理影片資源。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>📁 自動創建資料夾結構</li>
+<li>🔗 生成 .url 檔案，快速訪問影片連結</li>
+<li>🧹 自動清理不合法的資料夾名稱</li>
+<li>📝 支援 Markdown 格式的目錄檔案</li>
+<li>🎯 專門針對考試影片資源優化</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>Windows 作業系統（支援 .url 檔案）</li>
+</ul>
+<h2 id="安裝與使用">安裝與使用</h2>
+<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
+<ol>
+<li>將您的 Markdown 目錄檔案放在專案目錄中</li>
+<li>執行批次檔：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>go.bat your_toc_file.md
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="方法二直接使用-python">方法二：直接使用 Python</h3>
+<ol>
+<li>開啟命令提示字元或 PowerShell</li>
+<li>執行以下命令：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py your_toc_file.md
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="支援的目錄格式">支援的目錄格式</h2>
+<p>工具支援以下 Markdown 格式：</p>
+<h3 id="有-url-連結的格式">有 URL 連結的格式</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#ff79c6">-</span> [<span style="color:#ff79c6">113年度</span>](<span style="color:#50fa7b">https://example.com/video1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> [<span style="color:#ff79c6">112年度</span>](<span style="color:#50fa7b">https://example.com/video2</span>)
+</span></span></code></pre></div><h3 id="純文字格式">純文字格式</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 113年度影片
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">-</span> 112年度影片
+</span></span></code></pre></div><h3 id="行號格式自動處理">行號格式（自動處理）</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>1||- [<span style="color:#ff79c6">113年度</span>](<span style="color:#50fa7b">https://example.com/video1</span>)
+</span></span><span style="display:flex;"><span>2||- [<span style="color:#ff79c6">112年度</span>](<span style="color:#50fa7b">https://example.com/video2</span>)
+</span></span></code></pre></div><h2 id="輸出結果">輸出結果</h2>
+<p>執行後會在 <code>output</code> 資料夾中生成：</p>
+<pre tabindex="0"><code>output/
+├── 113年度/
+│   └── 113年度.url
+├── 112年度/
+│   └── 112年度.url
+└── 111年度/
+    └── 111年度.url
+</code></pre><h2 id="內建範例檔案">內建範例檔案</h2>
+<p>專案包含以下範例目錄檔案：</p>
+<ul>
+<li><code>toc_postoffice.md</code> - 郵局考試影片目錄</li>
+<li><code>toc_twport.md</code> - 台灣港務公司考試影片目錄</li>
+<li><code>toc-mrt.md</code> - 台北捷運考試影片目錄</li>
+<li><code>memo.md</code> - 備忘錄和筆記</li>
+</ul>
+<h2 id="使用範例">使用範例</h2>
+<h3 id="處理郵局考試影片目錄">處理郵局考試影片目錄</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py toc_postoffice.md
+</span></span></code></pre></div><h3 id="處理港務公司考試影片目錄">處理港務公司考試影片目錄</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py toc_twport.md
+</span></span></code></pre></div><h3 id="處理捷運考試影片目錄">處理捷運考試影片目錄</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py toc-mrt.md
+</span></span></code></pre></div><h2 id="資料夾名稱清理規則">資料夾名稱清理規則</h2>
+<p>工具會自動清理資料夾名稱，移除以下不合法字元：</p>
+<ul>
+<li>開頭和結尾的特殊字元：<code>| -[]().</code></li>
+<li>Windows 不支援的字元：<code>&lt;&gt;:&quot;/\|?*</code></li>
+<li>多餘的空格和破折號</li>
+</ul>
+<h2 id="錯誤處理">錯誤處理</h2>
+<ul>
+<li>如果資料夾名稱清理後為空，會使用預設名稱 <code>unnamed_folder</code></li>
+<li>如果無法創建資料夾，會顯示錯誤訊息但繼續處理其他項目</li>
+<li>如果指定的 Markdown 檔案不存在，會顯示錯誤並退出</li>
+</ul>
+<h2 id="注意事項">注意事項</h2>
+<ul>
+<li>確保有足夠的磁碟空間創建資料夾和檔案</li>
+<li>建議在執行前備份重要的資料</li>
+<li>生成的 .url 檔案可以在 Windows 檔案總管中直接點擊開啟</li>
+</ul>
+<h2 id="授權">授權</h2>
+<p>此專案為個人使用工具，請根據需要自行修改和分發。</p>
+<h2 id="更新日誌">更新日誌</h2>
+<ul>
+<li>初始版本：支援基本的 Markdown 目錄轉換功能</li>
+<li>支援行號格式的目錄檔案</li>
+<li>自動清理資料夾名稱功能</li>
+<li>錯誤處理和日誌輸出</li>
+</ul>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/wikihuangblog.github.io\/post\/code\/00_exam---\/exam-date-to-download-q@@flow\/onenote-video-toc-to-url\/',
+        pageTitle: 'onenote-video-toc-to-url',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer</p>
+            
+           
+           <ul class="list-inline">
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fail on wikihuang Blog</title>
-    <link>https://wikihuangblog.github.io/tags/fail/</link>
+    <link>http://localhost:1313/tags/fail/</link>
     <description>Recent content in Fail on wikihuang Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wikihuangblog.github.io/tags/fail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/fail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>outlook-rule</title>
-      <link>https://wikihuangblog.github.io/post/code/python/00_mail/00_fail/outlook-rule/</link>
+      <link>http://localhost:1313/post/code/python/00_mail/00_fail/outlook-rule/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/code/python/00_mail/00_fail/outlook-rule/</guid>
+      <guid>http://localhost:1313/post/code/python/00_mail/00_fail/outlook-rule/</guid>
       <description>&lt;h1 id=&#34;outlook-規則創建工具&#34;&gt;Outlook 規則創建工具&lt;/h1&gt;&#xA;&lt;p&gt;這個項目包含多個腳本來解決 Outlook 規則創建時的參數錯誤問題。&lt;/p&gt;&#xA;&lt;h2 id=&#34;問題分析&#34;&gt;問題分析&lt;/h2&gt;&#xA;&lt;p&gt;根據測試結果，主要問題是：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;主題條件設置失敗&lt;/strong&gt;：&lt;code&gt;(-2147352571, &#39;類型不符。&#39;, None, 1)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;規則保存失敗&lt;/strong&gt;：&lt;code&gt;(-2147352567, &#39;發生例外狀況。&#39;, (4096, &#39;Microsoft Outlook&#39;, &#39;由於無效的動作或條件，無法儲存一個或多個規則。&#39;, None, 0, -2147467259), None)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;規則衝突&lt;/strong&gt;：&lt;code&gt;(-2147352567, &#39;發生例外狀況。&#39;, (4096, &#39;Microsoft Outlook&#39;, &#39;一個或多個規則發生衝突。您必須解決衝突後，才能儲存規則。&#39;, None, 0, -2147352567), None)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;這表明 Outlook 的 COM 接口對主題條件的設置方式有特定要求，並且可能存在規則衝突。&lt;/p&gt;</description>
     </item>
   </channel>

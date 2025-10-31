@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mail on wikihuang Blog</title>
-    <link>https://wikihuangblog.github.io/tags/mail/</link>
+    <link>http://localhost:1313/tags/mail/</link>
     <description>Recent content in Mail on wikihuang Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wikihuangblog.github.io/tags/mail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rename-msg-by-date</title>
-      <link>https://wikihuangblog.github.io/post/code/python/00_mail/rename-msg-by-date/</link>
+      <link>http://localhost:1313/post/code/python/00_mail/rename-msg-by-date/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/code/python/00_mail/rename-msg-by-date/</guid>
+      <guid>http://localhost:1313/post/code/python/00_mail/rename-msg-by-date/</guid>
       <description>&lt;h1 id=&#34;msg-檔案重新命名工具&#34;&gt;MSG 檔案重新命名工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於自動重新命名 Outlook .msg 檔案的 Python 工具，根據郵件的發送日期來為檔案添加日期前綴。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能特色&#34;&gt;功能特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔍 自動從 .msg 檔案中提取發送日期&lt;/li&gt;&#xA;&lt;li&gt;📅 使用 &lt;code&gt;YYYYMMDD_HHMMSS&lt;/code&gt; 格式作為檔案名稱前綴&lt;/li&gt;&#xA;&lt;li&gt;🔄 避免重複處理已重新命名的檔案&lt;/li&gt;&#xA;&lt;li&gt;🛡️ 處理檔案名稱衝突（自動添加序號）&lt;/li&gt;&#xA;&lt;li&gt;📁 批次處理整個資料夾中的所有 .msg 檔案&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;系統需求&#34;&gt;系統需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows 作業系統&lt;/li&gt;&#xA;&lt;li&gt;Microsoft Outlook 已安裝&lt;/li&gt;&#xA;&lt;li&gt;Python 3.6 或更高版本&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝步驟&#34;&gt;安裝步驟&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;克隆或下載此專案到您的電腦&lt;/li&gt;&#xA;&lt;li&gt;安裝必要的依賴套件：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -r requirements.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;修改 &lt;code&gt;app.py&lt;/code&gt; 中的 &lt;code&gt;folder_path&lt;/code&gt; 變數，指向包含 .msg 檔案的資料夾：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;folder_path &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;D:\your\path\to\msg\files&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;執行程式：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;檔案命名規則&#34;&gt;檔案命名規則&lt;/h2&gt;&#xA;&lt;p&gt;程式會將檔案重新命名為以下格式：&lt;/p&gt;</description>
     </item>
     <item>
       <title>outlook-rule</title>
-      <link>https://wikihuangblog.github.io/post/code/python/00_mail/00_fail/outlook-rule/</link>
+      <link>http://localhost:1313/post/code/python/00_mail/00_fail/outlook-rule/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/code/python/00_mail/00_fail/outlook-rule/</guid>
+      <guid>http://localhost:1313/post/code/python/00_mail/00_fail/outlook-rule/</guid>
       <description>&lt;h1 id=&#34;outlook-規則創建工具&#34;&gt;Outlook 規則創建工具&lt;/h1&gt;&#xA;&lt;p&gt;這個項目包含多個腳本來解決 Outlook 規則創建時的參數錯誤問題。&lt;/p&gt;&#xA;&lt;h2 id=&#34;問題分析&#34;&gt;問題分析&lt;/h2&gt;&#xA;&lt;p&gt;根據測試結果，主要問題是：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;主題條件設置失敗&lt;/strong&gt;：&lt;code&gt;(-2147352571, &#39;類型不符。&#39;, None, 1)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;規則保存失敗&lt;/strong&gt;：&lt;code&gt;(-2147352567, &#39;發生例外狀況。&#39;, (4096, &#39;Microsoft Outlook&#39;, &#39;由於無效的動作或條件，無法儲存一個或多個規則。&#39;, None, 0, -2147467259), None)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;規則衝突&lt;/strong&gt;：&lt;code&gt;(-2147352567, &#39;發生例外狀況。&#39;, (4096, &#39;Microsoft Outlook&#39;, &#39;一個或多個規則發生衝突。您必須解決衝突後，才能儲存規則。&#39;, None, 0, -2147352567), None)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;這表明 Outlook 的 COM 接口對主題條件的設置方式有特定要求，並且可能存在規則衝突。&lt;/p&gt;</description>
     </item>
   </channel>

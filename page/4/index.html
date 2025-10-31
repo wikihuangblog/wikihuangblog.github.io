@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
     
 
     <meta property="og:url" content="https://wikihuangblog.github.io/" />
@@ -34,10 +34,10 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="wikihuang,blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>wikihuang Blog | wikihuang的博客 | wikihuang Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -110,8 +110,6 @@
 		    
                         <li><a href="/archive//">ARCHIVE</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
-                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -162,7 +160,7 @@
                 <div class="site-heading">
                     <h1>wikihuang Blog </h1>
                     
-		    <span class="subheading">路在脚下，心向远方</span>
+		    <span class="subheading">todo-done-as-target</span>
                 </div>
             </div>
         </div>
@@ -187,158 +185,49 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_target/ditto-extract/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/post-office-lnk-group/">
         <h2 class="post-title">
-            ditto-extract
+            post-office-lnk-group
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="ditto-剪貼簿提取工具">Ditto 剪貼簿提取工具</h1>
-<p>這是一個用於從 Ditto 剪貼簿管理軟體中提取和整理剪貼簿內容的 Python 工具。該工具可以將剪貼簿歷史記錄轉換為結構化的 Markdown 文件，並支援圖片內容的提取和處理。</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_search/everything-bookmark-to-bat/">
-        <h2 class="post-title">
-            everything-bookmark-to-bat
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="everything-bookmark-to-bat-轉換工具">Everything Bookmark to BAT 轉換工具</h1>
-<p>這是一個將 Everything 搜尋引擎的書籤（Bookmarks）和過濾器（Filters）轉換為批次檔案（.bat）的 Python 工具。</p>
-<h2 id="功能說明">功能說明</h2>
-<ul>
-<li>從 Everything 的 Bookmarks.csv 和 Filters.csv 檔案中讀取搜尋條件</li>
-<li>將每個搜尋條件轉換為獨立的 .bat 檔案</li>
-<li>自動處理檔案名稱的合法化（移除非法字元、限制長度）</li>
-<li>處理搜尋字串中的特殊字元（如引號、管道符號）</li>
-<li>避免重複生成相同內容的檔案</li>
-</ul>
-<h2 id="檔案結構">檔案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                 # 主要程式檔案
-├── Bookmarks.csv         # Everything 書籤檔案
-├── Filters.csv           # Everything 過濾器檔案
-├── 00_output/            # 生成的 .bat 檔案輸出目錄
-├── 00_issue/             # 專案說明文件
-├── backup/               # 備份目錄
-└── pic/                  # 圖片資源
-</code></pre><h2 id="使用方法">使用方法</h2>
-<h3 id="1-環境需求">1. 環境需求</h3>
-<ul>
-<li>Python 3.x</li>
-<li>Everything 搜尋引擎（安裝在 <code>C:\Program Files\Everything\</code>）</li>
-</ul>
-<h3 id="2-執行方式">2. 執行方式</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div><h3 id="3-程式功能">3. 程式功能</h3>
-<p>程式會執行以下操作：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_search/everything-sort-by-date-access/">
-        <h2 class="post-title">
-            everything-sort-by-date-access
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="everything-按存取日期排序搜尋工具">Everything 按存取日期排序搜尋工具</h1>
-<p>這是一個使用 Everything 搜尋工具來按檔案存取日期排序搜尋特定檔案的專案。</p>
-<h2 id="專案概述">專案概述</h2>
-<p>本專案提供了一個批次檔案腳本，使用 Everything 搜尋工具來搜尋指定路徑下的檔案，並按照存取日期進行排序。主要用於快速找到最近存取的應用程式檔案。</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_search/frequeny-folder/">
-        <h2 class="post-title">
-            frequeny-folder
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="資料夾頻率分析工具-frequency-folder-analyzer">資料夾頻率分析工具 (Frequency Folder Analyzer)</h1>
-<h2 id="專案簡介">專案簡介</h2>
-<p>這是一個用於分析資料夾使用頻率的 Python 工具，主要用於統計和分析不同類型資料夾的出現頻率，並生成具有可點擊連結的 Markdown 報告。</p>
+            <h1 id="郵局連結群組管理工具-post-office-link-group-manager">郵局連結群組管理工具 (Post Office Link Group Manager)</h1>
+<p>這是一個用於管理和組織 Windows 捷徑檔案的 Python 工具，特別適用於整理考試資料、學習資源和各種文件連結。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li>📊 <strong>智能路徑分析</strong>：自動識別和分類不同類型的資料夾路徑</li>
-<li>🎯 <strong>分類統計</strong>：分別統計 CodeALL、ProjProj、Sidebar 三種類型的資料夾</li>
-<li>📝 <strong>Markdown 輸出</strong>：生成具有可點擊連結的 Markdown 格式報告</li>
-<li>🔍 <strong>路徑過濾</strong>：智能過濾無意義的資料夾名稱（如 output、projproj、dist 等）</li>
-<li>📏 <strong>路徑長度限制</strong>：根據不同類型設定最小路徑長度要求</li>
+<li>🔗 <strong>自動建立捷徑</strong>: 從路徑清單自動建立 Windows .lnk 捷徑檔案</li>
+<li>📁 <strong>智能分類</strong>: 自動為每個捷徑建立編號前綴和對應資料夾</li>
+<li>📊 <strong>HTML 報表</strong>: 生成包含所有連結的 HTML 表格報表</li>
+<li>🗂️ <strong>多種輸出格式</strong>: 支援不同主題和分類的輸出目錄</li>
+<li>📝 <strong>詳細日誌</strong>: 完整的錯誤記錄和處理狀態追蹤</li>
 </ul>
 <h2 id="專案結構">專案結構</h2>
 <pre tabindex="0"><code>app/
-├── app.py                                    # 主程式檔案
-├── issue.md                                  # 需求說明文件
-├── results-0222.md                          # 2月22日分析結果
-├── results-0224.md                          # 2月24日分析結果
-├── 00_version/                              # 版本歷史
-│   ├── v1_fequecy-ok.py                     # 第一版：基本頻率統計
-│   ├── v2.@1_filter-fail.py                 # 第二版：過濾功能（失敗版本）
-│   └── v2.0_different-keyword-filter-ok;wait-different-length-filter.py  # 第二版：成功版本
-├── pic/                                     # 圖片資源
-│   ├── image-20250222145329252.png
-│   └── image-20250222151322429.png
-└── src/                                     # 原始資料檔案
-    ├── 0216-0222.txt
-    ├── 0222.txt
-    ├── 0223-ori.txt
-    ├── 0223.txt
-    └── 0224.txt
-</code></pre><h2 id="使用方法">使用方法</h2>
-<h3 id="基本使用">基本使用</h3>
-<ol>
-<li>將要分析的資料檔案放在 <code>src/</code> 資料夾中</li>
-<li>修改 <code>app.py</code> 中的檔案路徑：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>file_path <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;src/0224.txt&#34;</span>  <span style="color:#6272a4"># 更改為您的檔案名稱</span>
-</span></span></code></pre></div></li>
-<li>執行程式：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div></li>
-<li>查看生成的 <code>results.md</code> 檔案</li>
-</ol>
-<h3 id="分析規則">分析規則</h3>
-<p>程式會根據以下規則進行分析：</p>
+├── app.py                    # 主要程式檔案
+├── path.txt                  # 路徑清單檔案
+├── requirements.txt          # Python 依賴套件
+├── alllnk/                   # 原始連結檔案
+├── output/                   # 預設輸出目錄
+├── output-chinese/           # 中文內容輸出
+├── output-network/           # 網路相關輸出
+├── output-post/              # 郵局相關輸出
+├── output-postoffice/        # 郵局考試輸出
+├── output-program-normal/    # 程式設計一般輸出
+├── output-taipower/          # 台電相關輸出
+├── output-ttt/               # TTT 相關輸出
+├── output-twport/            # 台灣港務輸出
+├── output-v1/                # 版本 1 輸出
+└── 00_version/               # 版本歷史檔案
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Windows 作業系統</li>
+<li>Python 3.6 或更高版本</li>
+</ul>
+<h3 id="依賴套件">依賴套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div><p>主要依賴：</p>
        
         </div>
     </a>
@@ -354,42 +243,115 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/grouped-path-bracket-extract/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/000_move-prefix/rename-folder-by-keyword-with-prefix-number/">
         <h2 class="post-title">
-            grouped-path-bracket-extract
+            rename-folder-by-keyword-with-prefix-number
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="檔案路徑關鍵字提取與統計工具">檔案路徑關鍵字提取與統計工具</h1>
-<p>這是一個用於從檔案路徑中提取大括號內的關鍵字，並生成關鍵字頻率統計圖表的 Python 工具。</p>
+            <h1 id="資料夾重命名工具">資料夾重命名工具</h1>
+<p>這是一個用於根據關鍵字和章節資訊自動重新命名資料夾的 Python 應用程式。主要功能是將數字編號的資料夾重新命名為更具描述性的格式，並按照課程類別進行分類整理。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/rename-parent-as-child-aiqa/">
+        <h2 class="post-title">
+            rename-parent-as-child-aiqa
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="文件夾重命名工具">文件夾重命名工具</h1>
+<p>這是一個 Python 工具，用於根據目錄中的 <code>.aiqa.html</code> 文件自動重命名其父文件夾。</p>
+<h2 id="功能描述">功能描述</h2>
+<p>該工具會掃描指定目錄及其子目錄，尋找以 <code>.aiqa.html</code> 結尾的文件，然後使用該文件的名稱（去掉 <code>.aiqa</code> 後綴）來重命名其所在的父文件夾。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/simility-name-move/">
+        <h2 class="post-title">
+            simility-name-move
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="simility-name-move">Simility Name Move</h1>
+<p>一個基於文件名相似度的智能文件移動工具，用於自動整理和組織 HTML 文件。</p>
+<h2 id="功能概述">功能概述</h2>
+<p>這個項目包含兩個主要的 Python 腳本，用於根據文件名相似度自動移動 HTML 文件到相應的目標文件夾：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/big-md-to-part@@flow/split-exam-as-ditto-clipboard-way/">
+        <h2 class="post-title">
+            split-exam-as-ditto-clipboard-way
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="markdown-文件分割工具">Markdown 文件分割工具</h1>
+<p>這是一個用於將大型 Markdown 文件按章節分割成小文件的 Python 工具，支援自動添加 YAML front matter、簡體中文轉繁體中文、圖片處理等功能。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li>🔍 <strong>關鍵字提取</strong>：從檔案路徑中自動提取大括號 <code>{}</code> 內的關鍵字</li>
-<li>📊 <strong>頻率統計</strong>：統計每個關鍵字的出現頻率</li>
-<li>🖼️ <strong>視覺化輸出</strong>：生成包含關鍵字頻率表格的圖片檔案</li>
-<li>🔄 <strong>多關鍵字支援</strong>：支援單個檔案路徑中包含多個關鍵字的情況</li>
-<li>📝 <strong>自動命名</strong>：根據提取的關鍵字自動生成輸出檔案名稱</li>
+<li>📄 <strong>智能分割</strong>：根據 <code>### </code> 標題自動分割 Markdown 文件</li>
+<li>🏷️ <strong>自動分類</strong>：根據內容自動判斷是否為程式碼類型並添加相應標籤</li>
+<li>🔤 <strong>繁簡轉換</strong>：自動將簡體中文轉換為繁體中文</li>
+<li>🖼️ <strong>圖片處理</strong>：自動複製圖片到對應資料夾並更新路徑</li>
+<li>📝 <strong>YAML Front Matter</strong>：自動生成包含標題、分類、時間等資訊的 YAML 前置資料</li>
+<li>📁 <strong>結構化輸出</strong>：按編號創建子資料夾，便於管理</li>
 </ul>
-<h2 id="檔案結構">檔案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                                    # 主程式檔案
-├── path-with-keyword-in-bracket.txt         # 輸入檔案（包含檔案路徑列表）
-├── path-with-keyword-in-bracket-old.txt     # 舊版輸入檔案
-├── todo.md                                  # 待辦事項和問題記錄
-├── EaseUS_2024_10_15_10_55_59.jpg          # 範例輸出圖片
-└── README.md                                # 說明文件
-</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h2 id="安裝需求">安裝需求</h2>
 <h3 id="python-套件">Python 套件</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install Pillow
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install opencc
 </span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
 <ul>
 <li>Python 3.6+</li>
-<li>Windows 系統（字體路徑設定為 Windows 字體）</li>
+<li>Windows 系統（用於執行 run.bat）</li>
 </ul>
 <h2 id="使用方法">使用方法</h2>
-<h3 id="1-準備輸入檔案">1. 準備輸入檔案</h3>
-<p>將包含檔案路徑的列表儲存為 <code>path-with-keyword-in-bracket.txt</code>，每行一個路徑。</p>
+<h3 id="方法一使用批次檔推薦">方法一：使用批次檔（推薦）</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run.bat your_file.md
+</span></span></code></pre></div><h3 id="方法二直接使用-python">方法二：直接使用 Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py your_file.md
+</span></span></code></pre></div><h2 id="輸出結構">輸出結構</h2>
+<p>工具會在當前目錄創建 <code>split_sections</code> 資料夾，結構如下：</p>
        
         </div>
     </a>
@@ -444,67 +406,22 @@
             </a>
             
             
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+                <p>Software Developer</p>
             
            
            <ul class="list-inline">
                
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
                
                
                
                
                
                
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
                
                
                
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
             
             
                
@@ -532,27 +449,9 @@
                
             
                
-                    <a href="/tags/code" title="code">
-                        code
-                    </a>
-               
             
                
-                    <a href="/tags/ebook" title="ebook">
-                        ebook
-                    </a>
-               
             
-               
-                    <a href="/tags/eool" title="eool">
-                        eool
-                    </a>
-               
-            
-               
-                    <a href="/tags/essay" title="essay">
-                        essay
-                    </a>
                
             
                
@@ -564,47 +463,13 @@
                
             
                
-                    <a href="/tags/mail" title="mail">
-                        mail
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/money" title="money">
-                        money
-                    </a>
-               
-            
-               
-                    <a href="/tags/search" title="search">
-                        search
-                    </a>
-               
-            
-               
                     <a href="/tags/stastic" title="stastic">
                         stastic
                     </a>
                
             
                
-                    <a href="/tags/target" title="target">
-                        target
-                    </a>
-               
             
-               
-                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
-                        tmp-not-organize
-                    </a>
-               
-            
-               
-                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
-                        ui-user-feedback
-                    </a>
                
             
                
@@ -616,9 +481,9 @@
                
             
                
-                    <a href="/tags/video" title="video">
-                        video
-                    </a>
+            
+               
+            
                
             
                
@@ -629,16 +494,6 @@
 
     
     
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
-    
     
     
     <section>
@@ -646,15 +501,15 @@
         <h5>LAST POSTS</h5>
         <ul>
         
-            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
-            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
         
         </ul>
     </section>
@@ -674,15 +529,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
@@ -690,47 +536,11 @@
 
 		            
                     
-                    <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/yourgithub">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
                     
                     
                     
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                     
                     

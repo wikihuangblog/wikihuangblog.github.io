@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manual on wikihuang Blog</title>
-    <link>https://wikihuangblog.github.io/tags/manual/</link>
+    <link>http://localhost:1313/tags/manual/</link>
     <description>Recent content in Manual on wikihuang Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wikihuangblog.github.io/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>run-all-href-by-html-in-folder</title>
-      <link>https://wikihuangblog.github.io/post/code/python/00_manual/run-all-href-by-html-in-folder/</link>
+      <link>http://localhost:1313/post/code/python/00_manual/run-all-href-by-html-in-folder/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/code/python/00_manual/run-all-href-by-html-in-folder/</guid>
+      <guid>http://localhost:1313/post/code/python/00_manual/run-all-href-by-html-in-folder/</guid>
       <description>&lt;h1 id=&#34;html-鏈接批量處理工具&#34;&gt;HTML 鏈接批量處理工具&lt;/h1&gt;&#xA;&lt;p&gt;這是一個用於批量處理 HTML 文件並自動打開其中鏈接的 Python 工具。&lt;/p&gt;&#xA;&lt;h2 id=&#34;功能描述&#34;&gt;功能描述&lt;/h2&gt;&#xA;&lt;p&gt;此工具會：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;掃描指定資料夾中的所有 HTML 文件&lt;/li&gt;&#xA;&lt;li&gt;從每個 HTML 文件中提取第一個符合條件的鏈接（&lt;code&gt;li.classroom-toc-item &amp;gt; a&lt;/code&gt;）&lt;/li&gt;&#xA;&lt;li&gt;自動在瀏覽器中打開這些鏈接&lt;/li&gt;&#xA;&lt;li&gt;根據資料夾名稱計算延遲時間&lt;/li&gt;&#xA;&lt;li&gt;處理完成後將 HTML 文件移動到完成資料夾&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;系統需求&#34;&gt;系統需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 3.6+&lt;/li&gt;&#xA;&lt;li&gt;以下 Python 套件：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;beautifulsoup4&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;lxml&lt;/code&gt; (可選，用於更快的 HTML 解析)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝依賴&#34;&gt;安裝依賴&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install beautifulsoup4 lxml&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;&#xA;&lt;h3 id=&#34;方法一使用-python-腳本&#34;&gt;方法一：使用 Python 腳本&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python app.py &amp;lt;目標資料夾路徑&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;方法二使用批次檔&#34;&gt;方法二：使用批次檔&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;編輯 &lt;code&gt;go.bat&lt;/code&gt; 文件，修改 &lt;code&gt;target_folder&lt;/code&gt; 變數為您的目標資料夾路徑&lt;/li&gt;&#xA;&lt;li&gt;雙擊執行 &lt;code&gt;go.bat&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;參數說明&#34;&gt;參數說明&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;target_folder&lt;/code&gt;: 包含 HTML 文件的目標資料夾路徑&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;工作原理&#34;&gt;工作原理&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;鏈接提取&lt;/strong&gt;: 從每個 HTML 文件中查找 &lt;code&gt;li.classroom-toc-item &amp;gt; a&lt;/code&gt; 選擇器對應的鏈接&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;URL 處理&lt;/strong&gt;: 提取鏈接的基礎 URL（去除文件名部分）&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;延遲計算&lt;/strong&gt;: 根據資料夾名稱中的數字範圍計算延遲時間&#xA;&lt;ul&gt;&#xA;&lt;li&gt;例如：資料夾名為 &lt;code&gt;0-9&lt;/code&gt;，則延遲時間 = 4秒 × 5 + 5秒 = 25秒&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自動執行&lt;/strong&gt;: 按順序打開每個鏈接，等待指定時間後移動文件到完成資料夾&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;資料夾結構&#34;&gt;資料夾結構&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;目標資料夾/&#xD;&#xA;├── file1.html&#xD;&#xA;├── file2.html&#xD;&#xA;└── ...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;處理後：&lt;/p&gt;</description>
     </item>
   </channel>

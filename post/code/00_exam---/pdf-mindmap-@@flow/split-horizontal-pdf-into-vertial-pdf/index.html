@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="wikihuang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://wikihuangblog.github.io//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="split-horizontal-pdf-into-vertial-pdf" />
+    <meta property="og:title" content="split-horizontal-pdf-into-vertial-pdf" />
+    <meta property="twitter:title" content="split-horizontal-pdf-into-vertial-pdf" />
+    
+
+    
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    
+
+    <meta property="og:url" content="https://wikihuangblog.github.io/post/code/00_exam---/pdf-mindmap-@@flow/split-horizontal-pdf-into-vertial-pdf/" />
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="wikihuang,blog">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>split-horizontal-pdf-into-vertial-pdf | wikihuang的博客 | wikihuang Blog</title>
+
+    <link rel="canonical" href="/post/code/00_exam---/pdf-mindmap-@@flow/split-horizontal-pdf-into-vertial-pdf/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.min.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">wikihuang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>wikihuang Blog </h1>
+                    
+		    <span class="subheading">todo-done-as-target</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                <h1 id="pdf-水平分割工具">PDF 水平分割工具</h1>
+<p>這是一個用於將水平 PDF 文件分割成垂直 PDF 文件的 Python 工具。該工具可以將每個 PDF 頁面從中間水平分割，將原本的橫向頁面轉換為兩個縱向頁面。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔄 自動將水平 PDF 分割成垂直 PDF</li>
+<li>📁 批量處理目標文件夾中的所有 PDF 文件</li>
+<li>🛡️ 錯誤處理機制，確保程序穩定性</li>
+<li>📦 使用 PyMuPDF (fitz) 庫，提供高質量的 PDF 處理</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.6 或更高版本</li>
+<li>PyMuPDF 庫</li>
+</ul>
+<h2 id="安裝依賴">安裝依賴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install PyMuPDF
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批處理文件推薦">方法一：使用批處理文件（推薦）</h3>
+<ol>
+<li>將要處理的 PDF 文件放入 <code>target</code> 文件夾</li>
+<li>雙擊運行 <code>run.bat</code> 文件</li>
+<li>處理完成的文件將保存在 <code>target/split_pdfs/</code> 文件夾中</li>
+</ol>
+<h3 id="方法二直接運行-python-腳本">方法二：直接運行 Python 腳本</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py <span style="color:#ff79c6">[</span>目標文件夾路徑<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py E:<span style="color:#f1fa8c">\c</span>odeAll<span style="color:#f1fa8c">\p</span>ython<span style="color:#f1fa8c">\0</span>0_exam---<span style="color:#f1fa8c">\p</span>df-mindmap-@@flow<span style="color:#f1fa8c">\s</span>plit-horizontal-pdf-into-vertial-pdf<span style="color:#f1fa8c">\a</span>pp
+</span></span></code></pre></div><h2 id="文件結構">文件結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                    # 主程序文件
+├── run.bat                   # Windows 批處理執行文件
+├── issue.txt                 # 專案說明
+├── target/                   # 目標 PDF 文件存放文件夾
+│   ├── *.pdf                # 待處理的 PDF 文件
+│   └── split_pdfs/          # 處理後的 PDF 文件輸出文件夾
+└── 00_version/              # 版本歷史文件夾
+    ├── v1_chinese-pdf-fail;try-print-no-text-version.py  # v1 版本（使用 PyPDF2）
+    └── v2_PyMuPDF.py        # v2 版本（使用 PyMuPDF）
+</code></pre><h2 id="工作原理">工作原理</h2>
+<ol>
+<li><strong>讀取 PDF</strong>：使用 PyMuPDF 打開目標 PDF 文件</li>
+<li><strong>頁面分割</strong>：對每一頁進行水平分割
+<ul>
+<li>計算頁面中心點位置</li>
+<li>創建左半部分和右半部分的矩形區域</li>
+<li>將每個部分作為新頁面添加到輸出 PDF</li>
+</ul>
+</li>
+<li><strong>保存結果</strong>：將處理後的 PDF 保存到指定文件夾</li>
+</ol>
+<h2 id="版本歷史">版本歷史</h2>
+<h3 id="v1-版本">v1 版本</h3>
+<ul>
+<li>使用 PyPDF2 庫</li>
+<li>在處理中文 PDF 時遇到問題</li>
+<li>嘗試使用無文字版本但效果不佳</li>
+</ul>
+<h3 id="v2-版本當前版本">v2 版本（當前版本）</h3>
+<ul>
+<li>改用 PyMuPDF (fitz) 庫</li>
+<li>更好的 PDF 兼容性</li>
+<li>成功處理各種類型的 PDF 文件</li>
+</ul>
+<h2 id="注意事項">注意事項</h2>
+<ul>
+<li>確保目標文件夾中有 PDF 文件</li>
+<li>處理大型 PDF 文件時可能需要較長時間</li>
+<li>輸出文件會自動添加 <code>split_</code> 前綴</li>
+<li>如果處理過程中出現錯誤，程序會繼續處理其他文件</li>
+</ul>
+<h2 id="錯誤處理">錯誤處理</h2>
+<p>程序包含完整的錯誤處理機制：</p>
+<ul>
+<li>如果某個 PDF 文件無法處理，會顯示錯誤信息並繼續處理下一個文件</li>
+<li>所有錯誤信息都會在控制台中顯示</li>
+</ul>
+<h2 id="技術細節">技術細節</h2>
+<ul>
+<li><strong>主要庫</strong>：PyMuPDF (fitz)</li>
+<li><strong>處理方式</strong>：頁面級別的分割</li>
+<li><strong>輸出格式</strong>：保持原始 PDF 質量</li>
+<li><strong>文件命名</strong>：自動添加 <code>split_</code> 前綴</li>
+</ul>
+<h2 id="授權">授權</h2>
+<p>此專案為開源專案，可自由使用和修改。</p>
+<h2 id="貢獻">貢獻</h2>
+<p>歡迎提交問題報告和功能建議！</p>
+
+            
+             
+            
+
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/wikihuangblog.github.io\/post\/code\/00_exam---\/pdf-mindmap-@@flow\/split-horizontal-pdf-into-vertial-pdf\/',
+        pageTitle: 'split-horizontal-pdf-into-vertial-pdf',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer</p>
+            
+           
+           <ul class="list-inline">
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/exam---" title="exam---">
+                        exam---
+                    </a>
+               
+            
+               
+            
+               
+                    <a href="/tags/stastic" title="stastic">
+                        stastic
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/university" title="university">
+                        university
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+        
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+        
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
+        
+        </ul>
+    </section>
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="wikihuang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; wikihuang Blog 2025
+                    
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

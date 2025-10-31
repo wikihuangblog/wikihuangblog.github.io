@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
     
 
     <meta property="og:url" content="https://wikihuangblog.github.io/" />
@@ -34,10 +34,10 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="wikihuang,blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>wikihuang Blog | wikihuang的博客 | wikihuang Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -110,8 +110,6 @@
 		    
                         <li><a href="/archive//">ARCHIVE</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
-                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -162,7 +160,7 @@
                 <div class="site-heading">
                     <h1>wikihuang Blog </h1>
                     
-		    <span class="subheading">路在脚下，心向远方</span>
+		    <span class="subheading">todo-done-as-target</span>
                 </div>
             </div>
         </div>
@@ -187,7 +185,7 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_aiqa/ch02_cursor/cursor-history/">
+    <a href="https://wikihuangblog.github.io/post/code/00_aiqa/ch02_cursor/cursor-history/">
         <h2 class="post-title">
             cursor-history
         </h2>
@@ -211,69 +209,7 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/ch09_eng/ai-sex-girl/">
-        <h2 class="post-title">
-            AI-sex-girl
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="ai-角色聊天工具">AI 角色聊天工具</h1>
-<p>這是一個用於處理 Yodayo.com 網站上 AI 角色聊天連結的 Python 工具。該工具可以從 HTML 文件中提取角色資訊，建立資料夾結構，並下載相關圖片。</p>
-<h2 id="功能特色">功能特色</h2>
-<ul>
-<li>🔗 <strong>自動提取連結</strong>：從 HTML 文件中提取 <code>/tavern/chat/</code> 開頭的連結</li>
-<li>📁 <strong>智能資料夾管理</strong>：根據角色名稱自動建立資料夾，避免重複</li>
-<li>🖼️ <strong>圖片下載</strong>：自動下載角色的封面圖片</li>
-<li>🔗 <strong>快捷方式建立</strong>：為每個角色建立 Opera 瀏覽器快捷方式</li>
-<li>🧹 <strong>重複內容處理</strong>：合併多個 txt 文件並移除重複的連結</li>
-<li>🛡️ <strong>Windows 路徑安全</strong>：自動處理 Windows 不支援的字元</li>
-</ul>
-<h2 id="專案結構">專案結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                 # 主程式
-├── simple_test.py         # 測試檔案
-├── ori.html              # 原始 HTML 檔案
-├── issue.txt             # 問題記錄
-├── src/                  # 來源 txt 檔案資料夾
-│   ├── 1.txt
-│   ├── 2.txt
-│   └── ...
-├── 00_output/            # 輸出資料夾（自動建立）
-├── 00_version/           # 版本歷史
-│   ├── v1_url-ok;wait-open-by-opera.py
-│   ├── v2_opera-lnk-ok;wait-webp.py
-│   ├── v3_webp-ok;wait-all-txt-combine.py
-│   ├── v4_txt-combine-ok;wait-log-fail;wait-remove-repeat.py
-│   └── v5_no-repeat-ok;trim-wrong-name.py
-└── backuupp/             # 備份資料夾
-</code></pre><h2 id="安裝需求">安裝需求</h2>
-<ul>
-<li>Python 3.6+</li>
-<li>Windows 作業系統（用於建立 .lnk 快捷方式）</li>
-<li>Opera 瀏覽器（可選，用於快捷方式）</li>
-</ul>
-<h2 id="使用方法">使用方法</h2>
-<h3 id="1-基本使用">1. 基本使用</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div><h3 id="2-配置設定">2. 配置設定</h3>
-<p>在 <code>app.py</code> 中修改以下設定：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">
         <h2 class="post-title">
             book-code-to-doubao-lnk-sync
         </h2>
@@ -298,7 +234,7 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/combinephonepic/">
         <h2 class="post-title">
             combinephonepic
         </h2>
@@ -347,7 +283,7 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">
         <h2 class="post-title">
             crawl-exam-date-sidebar
         </h2>
@@ -382,6 +318,100 @@
 <ol>
 <li>
 <p><strong>安裝 Python 依賴套件</strong></p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">
+        <h2 class="post-title">
+            crawl-title-file-to-folder
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="網頁內容爬取工具">網頁內容爬取工具</h1>
+<p>這是一個用於從 HTML 清單文件中提取連結配對，並自動爬取網頁內容保存到本地資料夾的 Python 工具。</p>
+<h2 id="功能描述">功能描述</h2>
+<ul>
+<li>解析 <code>output-taipower_combinedTable.html</code> 文件中的連結配對</li>
+<li>提取每個 <code>link-group</code> 中的本地路徑（Loc）和線上連結（SEEK）</li>
+<li>使用 Playwright 自動化瀏覽器訪問需要登入的網頁</li>
+<li>將網頁內容保存到對應的本地資料夾中</li>
+<li>支援持久化登入狀態，避免重複登入</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<ul>
+<li>Python 3.7+</li>
+<li>需要安裝的套件：
+<ul>
+<li><code>playwright</code></li>
+<li><code>beautifulsoup4</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="安裝步驟">安裝步驟</h2>
+<ol>
+<li>安裝 Python 依賴套件：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install playwright beautifulsoup4
+</span></span></code></pre></div><ol start="2">
+<li>安裝 Playwright 瀏覽器：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>playwright install chromium
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<ol>
+<li>確保 <code>output-taipower_combinedTable.html</code> 文件存在於專案根目錄</li>
+<li>執行主程式：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
+</span></span></code></pre></div><ol start="3">
+<li>程式會自動開啟瀏覽器視窗，請完成登入（DeepSeek/Doubao 等）</li>
+<li>登入完成後，回到終端機按下 Enter 繼續</li>
+<li>程式會自動爬取所有連結並保存到對應的本地資料夾</li>
+</ol>
+<h2 id="文件結構">文件結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                              # 主程式
+├── output-taipower_combinedTable.html  # 連結清單文件
+├── 00_issue.txt                        # 需求說明文件
+├── .playwright-user-data/              # Playwright 用戶資料夾（自動生成）
+└── README.md                           # 說明文件
+</code></pre><h2 id="程式功能詳解">程式功能詳解</h2>
+<h3 id="主要函數">主要函數</h3>
+<ul>
+<li><code>parse_loc_and_seek_pairs()</code>: 解析 HTML 文件，提取 Loc 和 SEEK 連結配對</li>
+<li><code>ensure_directory()</code>: 確保目標資料夾存在</li>
+<li><code>derive_filename_from_url()</code>: 從 URL 生成安全的檔案名稱</li>
+<li><code>sanitize_to_filename()</code>: 清理文字為安全的檔案名稱</li>
+<li><code>fetch_and_save()</code>: 爬取網頁內容並保存到本地</li>
+</ul>
+<h3 id="特色功能">特色功能</h3>
+<ol>
+<li><strong>持久化登入狀態</strong>: 使用 Playwright 的持久化上下文，登入狀態會被保存</li>
+<li><strong>智能檔案命名</strong>: 優先使用網頁標題作為檔案名稱，fallback 到 URL 路徑</li>
+<li><strong>安全字元處理</strong>: 自動清理不安全的檔案名稱字元</li>
+<li><strong>錯誤處理</strong>: 對每個連結的爬取都有獨立的錯誤處理</li>
+</ol>
+<h2 id="注意事項">注意事項</h2>
+<ul>
+<li>首次執行時需要手動完成登入流程</li>
+<li>確保有足夠的磁碟空間保存爬取的內容</li>
+<li>程式會自動建立不存在的資料夾</li>
+<li>如果某個連結爬取失敗，程式會繼續處理其他連結</li>
+</ul>
+<h2 id="輸出格式">輸出格式</h2>
+<p>爬取的網頁內容會以 HTML 格式保存，檔案名稱格式為：</p>
        
         </div>
     </a>
@@ -432,67 +462,22 @@
             </a>
             
             
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+                <p>Software Developer</p>
             
            
            <ul class="list-inline">
                
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
                
                
                
                
                
                
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
                
                
                
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
             
             
                
@@ -520,27 +505,9 @@
                
             
                
-                    <a href="/tags/code" title="code">
-                        code
-                    </a>
-               
             
                
-                    <a href="/tags/ebook" title="ebook">
-                        ebook
-                    </a>
-               
             
-               
-                    <a href="/tags/eool" title="eool">
-                        eool
-                    </a>
-               
-            
-               
-                    <a href="/tags/essay" title="essay">
-                        essay
-                    </a>
                
             
                
@@ -552,47 +519,13 @@
                
             
                
-                    <a href="/tags/mail" title="mail">
-                        mail
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/money" title="money">
-                        money
-                    </a>
-               
-            
-               
-                    <a href="/tags/search" title="search">
-                        search
-                    </a>
-               
-            
-               
                     <a href="/tags/stastic" title="stastic">
                         stastic
                     </a>
                
             
                
-                    <a href="/tags/target" title="target">
-                        target
-                    </a>
-               
             
-               
-                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
-                        tmp-not-organize
-                    </a>
-               
-            
-               
-                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
-                        ui-user-feedback
-                    </a>
                
             
                
@@ -604,9 +537,9 @@
                
             
                
-                    <a href="/tags/video" title="video">
-                        video
-                    </a>
+            
+               
+            
                
             
                
@@ -617,16 +550,6 @@
 
     
     
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
-    
     
     
     <section>
@@ -634,15 +557,15 @@
         <h5>LAST POSTS</h5>
         <ul>
         
-            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
-            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
         
         </ul>
     </section>
@@ -662,15 +585,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
@@ -678,47 +592,11 @@
 
 		            
                     
-                    <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/yourgithub">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
                     
                     
                     
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                     
                     

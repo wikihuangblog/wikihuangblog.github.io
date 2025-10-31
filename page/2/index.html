@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="wikihuang，程序员, 开源爱好者 | 这里是 wikihuang 的博客，与你一起发现更大的世界。" />
     
 
     <meta property="og:url" content="https://wikihuangblog.github.io/" />
@@ -34,10 +34,10 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="wikihuang,blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>wikihuang Blog | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>wikihuang Blog | wikihuang的博客 | wikihuang Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -110,8 +110,6 @@
 		    
                         <li><a href="/archive//">ARCHIVE</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
-                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -162,7 +160,7 @@
                 <div class="site-heading">
                     <h1>wikihuang Blog </h1>
                     
-		    <span class="subheading">路在脚下，心向远方</span>
+		    <span class="subheading">todo-done-as-target</span>
                 </div>
             </div>
         </div>
@@ -187,192 +185,46 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_video/crawl-html-sitemap/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/d28@2_split-big-data-info/">
         <h2 class="post-title">
-            crawl-html-sitemap
+            D28@2_split-big-data-info
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="obsidian-文章連結爬蟲工具">Obsidian 文章連結爬蟲工具</h1>
-<p>這是一個用於處理 Obsidian 相關文章連結的 Python 工具，可以從 sitemap.html 中提取文章連結並自動創建 .url 文件，按照文章編號進行分類整理。</p>
+            <h1 id="html-文件分割工具">HTML 文件分割工具</h1>
+<p>這是一個用於將大型 HTML 文件分割成多個小文件的 Python 工具，特別適用於處理包含題目和章節的 HTML 文件。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li>🔍 從 sitemap.html 中提取文章標題和連結</li>
-<li>📁 根據文章編號自動創建分類資料夾</li>
-<li>🏷️ 智能識別多種文章編號格式</li>
-<li>📝 自動生成 .url 文件，方便快速訪問</li>
-<li>🛡️ 自動處理無效的檔案名稱字符</li>
-</ul>
-<h2 id="支援的文章編號格式">支援的文章編號格式</h2>
-<p>工具可以識別以下多種編號格式：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">
-        <h2 class="post-title">
-            crawl-title-file-to-folder
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="網頁內容爬取工具">網頁內容爬取工具</h1>
-<p>這是一個用於從 HTML 清單文件中提取連結配對，並自動爬取網頁內容保存到本地資料夾的 Python 工具。</p>
-<h2 id="功能描述">功能描述</h2>
-<ul>
-<li>解析 <code>output-taipower_combinedTable.html</code> 文件中的連結配對</li>
-<li>提取每個 <code>link-group</code> 中的本地路徑（Loc）和線上連結（SEEK）</li>
-<li>使用 Playwright 自動化瀏覽器訪問需要登入的網頁</li>
-<li>將網頁內容保存到對應的本地資料夾中</li>
-<li>支援持久化登入狀態，避免重複登入</li>
-</ul>
-<h2 id="系統需求">系統需求</h2>
-<ul>
-<li>Python 3.7+</li>
-<li>需要安裝的套件：
-<ul>
-<li><code>playwright</code></li>
-<li><code>beautifulsoup4</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="安裝步驟">安裝步驟</h2>
-<ol>
-<li>安裝 Python 依賴套件：</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install playwright beautifulsoup4
-</span></span></code></pre></div><ol start="2">
-<li>安裝 Playwright 瀏覽器：</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>playwright install chromium
-</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
-<ol>
-<li>確保 <code>output-taipower_combinedTable.html</code> 文件存在於專案根目錄</li>
-<li>執行主程式：</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python app.py
-</span></span></code></pre></div><ol start="3">
-<li>程式會自動開啟瀏覽器視窗，請完成登入（DeepSeek/Doubao 等）</li>
-<li>登入完成後，回到終端機按下 Enter 繼續</li>
-<li>程式會自動爬取所有連結並保存到對應的本地資料夾</li>
-</ol>
-<h2 id="文件結構">文件結構</h2>
-<pre tabindex="0"><code>app/
-├── app.py                              # 主程式
-├── output-taipower_combinedTable.html  # 連結清單文件
-├── 00_issue.txt                        # 需求說明文件
-├── .playwright-user-data/              # Playwright 用戶資料夾（自動生成）
-└── README.md                           # 說明文件
-</code></pre><h2 id="程式功能詳解">程式功能詳解</h2>
-<h3 id="主要函數">主要函數</h3>
-<ul>
-<li><code>parse_loc_and_seek_pairs()</code>: 解析 HTML 文件，提取 Loc 和 SEEK 連結配對</li>
-<li><code>ensure_directory()</code>: 確保目標資料夾存在</li>
-<li><code>derive_filename_from_url()</code>: 從 URL 生成安全的檔案名稱</li>
-<li><code>sanitize_to_filename()</code>: 清理文字為安全的檔案名稱</li>
-<li><code>fetch_and_save()</code>: 爬取網頁內容並保存到本地</li>
-</ul>
-<h3 id="特色功能">特色功能</h3>
-<ol>
-<li><strong>持久化登入狀態</strong>: 使用 Playwright 的持久化上下文，登入狀態會被保存</li>
-<li><strong>智能檔案命名</strong>: 優先使用網頁標題作為檔案名稱，fallback 到 URL 路徑</li>
-<li><strong>安全字元處理</strong>: 自動清理不安全的檔案名稱字元</li>
-<li><strong>錯誤處理</strong>: 對每個連結的爬取都有獨立的錯誤處理</li>
-</ol>
-<h2 id="注意事項">注意事項</h2>
-<ul>
-<li>首次執行時需要手動完成登入流程</li>
-<li>確保有足夠的磁碟空間保存爬取的內容</li>
-<li>程式會自動建立不存在的資料夾</li>
-<li>如果某個連結爬取失敗，程式會繼續處理其他連結</li>
-</ul>
-<h2 id="輸出格式">輸出格式</h2>
-<p>爬取的網頁內容會以 HTML 格式保存，檔案名稱格式為：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d02_06_combine-qa-newest/">
-        <h2 class="post-title">
-            D02_06_combine-QA-newest
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="金融科技問答合併工具">金融科技問答合併工具</h1>
-<p>這是一個用於處理金融科技考試題目和答案的 Python 工具，能夠自動將分離的題目和答案文件合併成統一的格式。</p>
-<h2 id="專案概述">專案概述</h2>
-<p>本專案主要用於處理金融科技相關的考試題目，包含：</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by wikihuang Blog on Wednesday, October 8, 2025
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d13_08_combine-each-mindmap-text/">
-        <h2 class="post-title">
-            D13_08_combine-each-mindmap-text
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <h1 id="html-內容提取與合併工具">HTML 內容提取與合併工具</h1>
-<p>這是一個用於從多個 HTML 文件中提取特定內容並合併成單一 Markdown 文件的 Python 工具。</p>
-<h2 id="功能描述">功能描述</h2>
-<p>本工具專門設計用於處理包含程式碼內容的 HTML 文件，能夠：</p>
-<ul>
-<li>從指定的 HTML 文件中提取特定結構的程式碼內容</li>
-<li>將提取的內容合併成一個統一的 Markdown 文件</li>
-<li>自動處理多個文件並保持內容的結構化組織</li>
+<li>🔧 自動識別 HTML 文件中的標題結構（H1 和 H3 標題）</li>
+<li>📝 智能文件名清理和格式化</li>
+<li>🎯 支援題目編號提取和格式化</li>
+<li>📁 自動創建輸出目錄</li>
+<li>🌐 支援中文文件名和內容</li>
 </ul>
 <h2 id="專案結構">專案結構</h2>
 <pre tabindex="0"><code>app/
-├── app.py                    # 主程式文件
-├── requirements.txt          # Python 依賴套件
-├── src.txt                  # 輸入文件路徑列表
-├── issue.txt                # 專案需求說明
-├── output/                  # 輸出目錄
-│   └── combined_content.md  # 合併後的內容文件
-├── output-logic/            # 邏輯輸出目錄
-├── output-ooo/              # 其他輸出目錄
-└── 00_version/              # 版本歷史
-</code></pre><h2 id="安裝與使用">安裝與使用</h2>
-<h3 id="1-安裝依賴套件">1. 安裝依賴套件</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
-</span></span></code></pre></div><h3 id="2-準備輸入文件">2. 準備輸入文件</h3>
-<p>在 <code>src.txt</code> 文件中列出要處理的 HTML 文件路徑，每行一個路徑：</p>
+├── app.py                                    # 主程式文件
+├── book-chapter.html                        # 輸入的 HTML 文件
+├── memo.markdown                            # 專案備忘錄
+├── output/                                  # 輸出目錄
+│   ├── 01.html
+│   ├── 02.html
+│   └── ...
+├── 112-data-info-book-chapter-backup/       # 備份目錄
+│   ├── 112-data-info-book-chapter.html
+│   └── output/                              # 備份輸出
+└── README.md                                # 本文件
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="python-版本">Python 版本</h3>
+<ul>
+<li>Python 3.6 或更高版本</li>
+</ul>
+<h3 id="依賴套件">依賴套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install beautifulsoup4
+</span></span></code></pre></div><h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備輸入文件">1. 準備輸入文件</h3>
+<p>將要分割的 HTML 文件命名為 <code>book-chapter.html</code> 並放置在專案根目錄。</p>
        
         </div>
     </a>
@@ -388,25 +240,212 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://wikihuangblog.github.io/post/code/python/00_tmp-not-organize/d15_01_clipboard-to-jpg/">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/d28@3_get-filename-tag-append-into-final-part-in-content-----/">
         <h2 class="post-title">
-            D15_01_clipboard-to-jpg
+            D28@3_get-filename-tag-append-into-final-part-in-content-----
         </h2>
 	
         <div class="post-content-preview">
 	
-            <h1 id="剪貼簿圖片轉-markdown-工具">剪貼簿圖片轉 Markdown 工具</h1>
-<p>這是一個 Python 工具，可以將剪貼簿中的圖片保存為 JPG 格式，並自動創建包含這些圖片的 Markdown 文件。</p>
+            <h1 id="考試題目標籤與簡答整合工具">考試題目標籤與簡答整合工具</h1>
+<p>這是一個用於處理考試題目文件的 Python 工具，主要功能是從文件路徑中提取標籤和章節信息，並將對應的簡答內容整合到原始文件中。</p>
+<h2 id="功能概述">功能概述</h2>
+<p>本工具主要執行以下操作：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/grouped-path-bracket-extract/">
+        <h2 class="post-title">
+            grouped-path-bracket-extract
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="檔案路徑關鍵字提取與統計工具">檔案路徑關鍵字提取與統計工具</h1>
+<p>這是一個用於從檔案路徑中提取大括號內的關鍵字，並生成關鍵字頻率統計圖表的 Python 工具。</p>
 <h2 id="功能特色">功能特色</h2>
 <ul>
-<li>🖼️ 從剪貼簿獲取圖片並保存為 JPG 格式</li>
-<li>📝 自動創建 Markdown 文件並插入圖片</li>
-<li>⌨️ 使用快捷鍵操作（F9 保存圖片，F7 完成文件）</li>
-<li>🔄 支援連續創建多個 Markdown 文件</li>
-<li>📁 自動創建圖片目錄並組織文件</li>
+<li>🔍 <strong>關鍵字提取</strong>：從檔案路徑中自動提取大括號 <code>{}</code> 內的關鍵字</li>
+<li>📊 <strong>頻率統計</strong>：統計每個關鍵字的出現頻率</li>
+<li>🖼️ <strong>視覺化輸出</strong>：生成包含關鍵字頻率表格的圖片檔案</li>
+<li>🔄 <strong>多關鍵字支援</strong>：支援單個檔案路徑中包含多個關鍵字的情況</li>
+<li>📝 <strong>自動命名</strong>：根據提取的關鍵字自動生成輸出檔案名稱</li>
 </ul>
-<h2 id="安裝需求">安裝需求</h2>
+<h2 id="檔案結構">檔案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                                    # 主程式檔案
+├── path-with-keyword-in-bracket.txt         # 輸入檔案（包含檔案路徑列表）
+├── path-with-keyword-in-bracket-old.txt     # 舊版輸入檔案
+├── todo.md                                  # 待辦事項和問題記錄
+├── EaseUS_2024_10_15_10_55_59.jpg          # 範例輸出圖片
+└── README.md                                # 說明文件
+</code></pre><h2 id="安裝需求">安裝需求</h2>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install Pillow
+</span></span></code></pre></div><h3 id="系統需求">系統需求</h3>
+<ul>
+<li>Python 3.6+</li>
+<li>Windows 系統（字體路徑設定為 Windows 字體）</li>
+</ul>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="1-準備輸入檔案">1. 準備輸入檔案</h3>
+<p>將包含檔案路徑的列表儲存為 <code>path-with-keyword-in-bracket.txt</code>，每行一個路徑。</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/syncqq@@flow/html-to-md-nextqq-split/">
+        <h2 class="post-title">
+            html-to-md-nextQQ-split
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="html-轉-markdown-工具">HTML 轉 Markdown 工具</h1>
+<p>這是一個專門用於將 HTML 內容轉換為 Markdown 格式的 Python 工具，特別針對豆包（Doubao）聊天記錄進行優化處理。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li><strong>HTML 到 Markdown 轉換</strong>：使用 BeautifulSoup 和 html2text 庫進行高品質轉換</li>
+<li><strong>智能內容處理</strong>：自動識別並處理「下一題」等關鍵詞，將其轉換為標題格式</li>
+<li><strong>格式清理</strong>：移除不必要的 HTML 標籤和樣式，保持內容簡潔</li>
+<li><strong>中文支援</strong>：完整支援繁體中文和簡體中文內容</li>
+<li><strong>代碼塊處理</strong>：特別優化代碼標籤的處理，確保代碼格式正確</li>
+</ul>
+<h2 id="專案結構">專案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py                          # 主程式文件
+├── input.html                      # 輸入的 HTML 文件
+├── output.md                       # 輸出的 Markdown 文件
+├── README.md                       # 專案說明文件
+├── 00_different-input/             # 不同輸入範例
+│   ├── decimal-to-multi-base/      # 十進制轉多進制範例
+│   └── 程序算法小考官---.doubao.html
+├── 00_version/                     # 版本歷史
+│   ├── v1.py                       # 第一版（空文件）
+│   ├── v2_newQ-translate.py        # 第二版（空文件）
+│   └── v3_newQ-as-h3-ok.py        # 第三版（完整功能）
+└── split_sections/                 # 分割後的章節文件
+</code></pre><h2 id="安裝需求">安裝需求</h2>
 <p>確保您的系統已安裝以下 Python 套件：</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by wikihuang Blog on Wednesday, October 8, 2025
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://wikihuangblog.github.io/post/code/00_exam---/pdf-mindmap-@@flow/html-to-md-to-pdf/">
+        <h2 class="post-title">
+            html-to-md-to-pdf
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <h1 id="html-轉-pdfmarkdown-轉換工具">HTML 轉 PDF/Markdown 轉換工具</h1>
+<p>這是一個 Python 工具，可以將 HTML 檔案批量轉換為 PDF 和 Markdown 格式。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>🔄 批量轉換 HTML 檔案為 PDF 和 Markdown 格式</li>
+<li>📁 支援目錄結構處理（最多處理 2 層子目錄）</li>
+<li>🎨 自定義 CSS 樣式，優化 PDF 輸出格式</li>
+<li>📄 支援 B5 頁面大小，最小邊距設定</li>
+<li>🚀 簡單易用的批次執行腳本</li>
+</ul>
+<h2 id="系統需求">系統需求</h2>
+<h3 id="python-套件">Python 套件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pdfkit html2text weasyprint markdown
+</span></span></code></pre></div><h3 id="外部工具">外部工具</h3>
+<ul>
+<li><strong>wkhtmltopdf</strong>: 用於 HTML 轉 PDF 轉換
+<ul>
+<li>下載地址: <a href="https://wkhtmltopdf.org/downloads.html">https://wkhtmltopdf.org/downloads.html</a></li>
+<li>預設安裝路徑: <code>C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="檔案結構">檔案結構</h2>
+<pre tabindex="0"><code>app/
+├── app.py          # 主要轉換程式（使用 pdfkit）
+├── app2md.py       # 替代轉換程式（使用 weasyprint）
+├── custom.css      # 自定義 CSS 樣式檔案
+├── run.bat         # Windows 批次執行腳本
+├── issue.txt       # 專案說明
+├── target/         # HTML 檔案輸入目錄
+├── target---1/     # 備用輸入目錄
+├── target-ori/     # 原始檔案目錄
+└── output_pdf/     # 輸出目錄（自動建立）
+</code></pre><h2 id="使用方法">使用方法</h2>
+<h3 id="方法一使用批次腳本推薦">方法一：使用批次腳本（推薦）</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 在 Windows 上直接執行</span>
+</span></span><span style="display:flex;"><span>run.bat
+</span></span></code></pre></div><h3 id="方法二直接執行-python-程式">方法二：直接執行 Python 程式</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># 使用 app.py（pdfkit 版本）</span>
+</span></span><span style="display:flex;"><span>python app.py target
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># 使用 app2md.py（weasyprint 版本）</span>
+</span></span><span style="display:flex;"><span>python app2md.py
+</span></span></code></pre></div><h2 id="程式說明">程式說明</h2>
+<h3 id="apppy">app.py</h3>
+<ul>
+<li>使用 <code>pdfkit</code> 和 <code>wkhtmltopdf</code> 進行轉換</li>
+<li>支援自定義 CSS 樣式</li>
+<li>設定 B5 頁面大小，最小邊距</li>
+<li>同時產生 PDF 和 Markdown 檔案</li>
+</ul>
+<h3 id="app2mdpy">app2md.py</h3>
+<ul>
+<li>使用 <code>weasyprint</code> 進行轉換</li>
+<li>先將 HTML 轉為 Markdown，再轉為 PDF</li>
+<li>支援 A4 頁面大小</li>
+<li>內建 CSS 樣式</li>
+</ul>
+<h2 id="輸出設定">輸出設定</h2>
+<h3 id="pdf-設定">PDF 設定</h3>
+<ul>
+<li><strong>頁面大小</strong>: B5 (app.py) / A4 (app2md.py)</li>
+<li><strong>邊距</strong>: 最小邊距設定</li>
+<li><strong>字體</strong>: 自動換行，優化排版</li>
+<li><strong>縮放</strong>: 可調整縮放比例</li>
+</ul>
+<h3 id="markdown-設定">Markdown 設定</h3>
+<ul>
+<li>保留連結和圖片</li>
+<li>保留文字格式</li>
+<li>UTF-8 編碼</li>
+</ul>
+<h2 id="目錄處理">目錄處理</h2>
+<p>程式會自動處理以下目錄結構：</p>
        
         </div>
     </a>
@@ -461,67 +500,22 @@
             </a>
             
             
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+                <p>Software Developer</p>
             
            
            <ul class="list-inline">
                
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
                
                
                
                
                
                
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
                
                
                
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
                
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
             
             
                
@@ -549,27 +543,9 @@
                
             
                
-                    <a href="/tags/code" title="code">
-                        code
-                    </a>
-               
             
                
-                    <a href="/tags/ebook" title="ebook">
-                        ebook
-                    </a>
-               
             
-               
-                    <a href="/tags/eool" title="eool">
-                        eool
-                    </a>
-               
-            
-               
-                    <a href="/tags/essay" title="essay">
-                        essay
-                    </a>
                
             
                
@@ -581,47 +557,13 @@
                
             
                
-                    <a href="/tags/mail" title="mail">
-                        mail
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/money" title="money">
-                        money
-                    </a>
-               
-            
-               
-                    <a href="/tags/search" title="search">
-                        search
-                    </a>
-               
-            
-               
                     <a href="/tags/stastic" title="stastic">
                         stastic
                     </a>
                
             
                
-                    <a href="/tags/target" title="target">
-                        target
-                    </a>
-               
             
-               
-                    <a href="/tags/tmp-not-organize" title="tmp-not-organize">
-                        tmp-not-organize
-                    </a>
-               
-            
-               
-                    <a href="/tags/ui-user-feedback" title="ui-user-feedback">
-                        ui-user-feedback
-                    </a>
                
             
                
@@ -633,9 +575,9 @@
                
             
                
-                    <a href="/tags/video" title="video">
-                        video
-                    </a>
+            
+               
+            
                
             
                
@@ -646,16 +588,6 @@
 
     
     
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
-    
     
     
     <section>
@@ -663,15 +595,15 @@
         <h5>LAST POSTS</h5>
         <ul>
         
-            <li><a href="/post/code/python/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
+            <li><a href="/post/code/00_aiqa/ch02_cursor/cursor-history/">cursor-history</a></li>
         
-            <li><a href="/post/code/python/ch09_eng/ai-sex-girl/">AI-sex-girl</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/book-code-to-doubao-lnk-sync/">book-code-to-doubao-lnk-sync</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
         
-            <li><a href="/post/code/python/00_exam---/syncqq@@flow/combinephonepic/">combinephonepic</a></li>
+            <li><a href="/post/code/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
         
-            <li><a href="/post/code/python/00_exam---/exam-date-to-download-q@@flow/crawl-exam-date-sidebar/">crawl-exam-date-sidebar</a></li>
+            <li><a href="/post/code/00_exam---/syncqq@@flow/crawl-title-file-to-folder/">crawl-title-file-to-folder</a></li>
         
         </ul>
     </section>
@@ -691,15 +623,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
@@ -707,47 +630,11 @@
 
 		            
                     
-                    <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/yourgithub">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
                     
                     
                     
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                     
                     
