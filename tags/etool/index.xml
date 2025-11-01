@@ -10,17 +10,10 @@
     <atom:link href="https://wikihuangblog.github.io/tags/etool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>etool-email</title>
-      <link>https://wikihuangblog.github.io/post/00_maintarget---copy/2011/00_maintarget/etool-email/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/00_maintarget---copy/2011/00_maintarget/etool-email/</guid>
-      <description>&lt;h1 id=&#34;email-organize&#34;&gt;email-organize&lt;/h1&gt;&#xA;&lt;p&gt;過去在做這個專案的時候啊，當時其實最可怕的問題就是要面對這些數不完的email。就每天都要進行。這個專案的編輯嘛，每天都要修改啊哪，每一天都會有業主的意見了。所以email可以說是被塞爆的狀態啊。那到底要怎麼整理比較好呢？我覺得email這麼多要。將他依照不同的類別加以分類啊。那就是我當初設定的第一個版本嘛，當時是把每一個email的鏈結通通。就用Excel的方式呢來產生出一各可以排序啊，可以搜尋啊，那依照日期排序然後關鍵字。去過濾的一個架構，這樣比較好搜尋了。那這是完我完成了第一個版本了。那後來就不用這種方法了。後來是。比較偏向檔案搜尋的方式就是將每一個email的鏈結都。透過Outlook的一個MSG檔案，然後。透過ABC去搜尋。那在分類方面呢，這是用資料夾，然後依照關鍵字去分類啊。那日期的部分呢一樣就是。依照。 Email送過來的日期呢來作為分類了。那在那之後呢，就比較不會去害怕這種大量的email管理問題。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>etool-email</title>
       <link>https://wikihuangblog.github.io/post/00_maintarget/2011/00_maintarget/etool-email/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       <guid>https://wikihuangblog.github.io/post/00_maintarget/2011/00_maintarget/etool-email/</guid>
-      <description>&lt;h1 id=&#34;email-organize&#34;&gt;email-organize&lt;/h1&gt;&#xA;&lt;p&gt;過去在做這個專案的時候啊，當時其實最可怕的問題就是要面對這些數不完的email。就每天都要進行。這個專案的編輯嘛，每天都要修改啊哪，每一天都會有業主的意見了。所以email可以說是被塞爆的狀態啊。那到底要怎麼整理比較好呢？我覺得email這麼多要。將他依照不同的類別加以分類啊。那就是我當初設定的第一個版本嘛，當時是把每一個email的鏈結通通。就用Excel的方式呢來產生出一各可以排序啊，可以搜尋啊，那依照日期排序然後關鍵字。去過濾的一個架構，這樣比較好搜尋了。那這是完我完成了第一個版本了。那後來就不用這種方法了。後來是。比較偏向檔案搜尋的方式就是將每一個email的鏈結都。透過Outlook的一個MSG檔案，然後。透過ABC去搜尋。那在分類方面呢，這是用資料夾，然後依照關鍵字去分類啊。那日期的部分呢一樣就是。依照。 Email送過來的日期呢來作為分類了。那在那之後呢，就比較不會去害怕這種大量的email管理問題。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;email-organize&#34;&gt;email-organize&lt;/h1&gt;&#xA;&lt;p&gt;過去在做這個專案的時候，當時其實最可怕的問題就是要面對這些數不完的email。每天都要進行這個專案的編輯，每天都要修改，每一天都會有業主的意見。所以email可以說是被塞爆的狀態。那到底要怎麼整理比較好呢？我覺得email這麼多，要將它依照不同的類別加以分類。那就是我當初設定的第一個版本，當時是把每一個email的鏈結通通用Excel的方式來產生出一個可以排序、可以搜尋、依照日期排序、然後用關鍵字去過濾的架構，這樣比較好搜尋。這是我完成的第一個版本。後來就不用這種方法了，後來比較偏向檔案搜尋的方式，就是將每一個email的鏈結都透過Outlook的MSG檔案，然後透過ABC去搜尋。在分類方面，是用資料夾，然後依照關鍵字去分類。日期的部分一樣就是依照Email送過來的日期來作為分類。在那之後，就比較不會去害怕這種大量的email管理問題。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

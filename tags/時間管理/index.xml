@@ -10,13 +10,6 @@
     <atom:link href="https://wikihuangblog.github.io/tags/%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>first note blog</title>
-      <link>https://wikihuangblog.github.io/post/00_maintarget---copy/2016/00_maintarget/target/octopress-blog/</link>
-      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://wikihuangblog.github.io/post/00_maintarget---copy/2016/00_maintarget/target/octopress-blog/</guid>
-      <description>&lt;h1 id=&#34;first-note-blog&#34;&gt;first note blog&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://wikihuang.github.io/&#34;&gt;https://wikihuang.github.io/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;這是第一篇關於筆記網誌的記錄，當時完成的這個版本的網誌，就是你一直希望能實現的 —— 把每次寫的文章順利接軌上傳的功能。當然，那個時候的網誌主要用來存放一些精心整理過的筆記。只不過，每一篇文章都要花很多時間做精細的整理，所以雖然文章完成後正確性很高，但時間消耗實在太久了。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>first note blog</title>
       <link>https://wikihuangblog.github.io/post/00_maintarget/2016/00_maintarget/target/octopress-blog/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       <guid>https://wikihuangblog.github.io/post/00_maintarget/2016/00_maintarget/target/octopress-blog/</guid>
